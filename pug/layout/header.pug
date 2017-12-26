@@ -7,16 +7,20 @@ block header
                     // Mobile Toggle Menu Button
                     a.js-fh5co-nav-toggle.fh5co-nav-toggle(href='#', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
                         i
-                    a.navbar-brand(href='index.html') Alchemy Lending
+                    a.navbar-brand(href='index.html')
+                        img(src='../../images/logo.png')
                 #navbar.navbar-collapse.collapse
                     ul.nav.navbar-nav.navbar-right
-                        li.active
-                            a(href='#', data-nav-section='home')
-                                span Home
                         li
                             a(href='#', data-nav-section='Borrow')
                                 span Borrow
                         li
                             a(href='#', data-nav-section='Invest')
                                 span Invest
+                        li
+                            a(href='#', data-nav-section='Login')
+                                span Login
+                        li.active.register_btn.register_btn_style
+                            a(href='#', data-nav-section='Register')
+                                span Register
             // </div>

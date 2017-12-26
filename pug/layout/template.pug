@@ -59,6 +59,8 @@ html.no-js
 			6. brown.css
 			7. green.css
 		link(rel='stylesheet', href='css/style.css')
+		link(href="css/borrow/borrow.css", rel="stylesheet")
+		
 		// Styleswitcher ( This style is for demo purposes only, you may delete this anytime. )
 		link#theme-switch(rel='stylesheet', href='css/turquoise.css')
 		// End demo purposes only
@@ -169,19 +171,7 @@ html.no-js
 			script(src='js/respond.min.js')
 	body
 		block header
-		section#fh5co-home(data-section='home', style='background-image: url(images/full_image_2.jpg);', data-stellar-background-ratio='0.5')
-			.gradient
-			.container
-				.text-wrap
-					.text-inner
-						.row
-							.col-md-8.col-md-offset-2
-								h1.to-animate The Best Monthly Cash Flow Asset
-								h2.to-animate register and start earning estimated returns of 7% today
-								p
-									button.btn.btn-primary
-										a(href='#', data-nav-section='Invest') View Availabilities
-			.slant
+		block section1
 		section#fh5co-intro
 			.container
 				.row.row-bottom-padded-lg

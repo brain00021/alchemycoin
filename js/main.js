@@ -134,9 +134,11 @@
 
 			if ( scrlTop > 500 && scrlTop <= 2000 ) {
 				header.addClass('navbar-fixed-top fh5co-animated slideInDown');
+				$('.register_btn').removeClass('register_btn_style');
 			} else if ( scrlTop <= 500) {
 				if ( header.hasClass('navbar-fixed-top') ) {
 					header.addClass('navbar-fixed-top fh5co-animated slideOutUp');
+					$('.register_btn').addClass('register_btn_style');
 					setTimeout(function(){
 						header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
 					}, 100 );
