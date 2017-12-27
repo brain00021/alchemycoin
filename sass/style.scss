@@ -471,7 +471,6 @@ h1, h2, h3, h4, h5, h6 {
 	background-attachment: fixed;
 	position: relative;
 	width: 100%;
-	
 	background-color: $brand-primary;
 	color: #fff;
 	overflow: hidden;
@@ -616,6 +615,7 @@ h1, h2, h3, h4, h5, h6 {
 				margin-bottom: 30px;
 				display: block;
 			}
+			
 		}
 		h2 {
 			font-size: 24px;
@@ -1310,6 +1310,9 @@ h1, h2, h3, h4, h5, h6 {
 		&:hover, &:active, &:focus {
 			box-shadow: none;
 			background: $brand-primary;
+		}
+		a{
+			color: $brand-white;
 		}
 	}
 	&:hover, &:active, &:focus {
