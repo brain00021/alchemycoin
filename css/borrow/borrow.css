@@ -1,3 +1,7 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .navbar-brand {
   padding: 5px;
   width: 250px; }
@@ -25,6 +29,16 @@
   font-style: bold;
   padding: 15px; }
 
+a.fh5co-project-item {
+  overflow: hidden;
+  min-height: 140px;
+  max-height: 200px; }
+  a.fh5co-project-item img {
+    width: 100%; }
+
+.applynow-button-style {
+  color: white; }
+
 @-webkit-keyframes focus-button-style {
   0% {
     background-position: 0; }
@@ -40,3 +54,30 @@
     background-position: 100%; }
   100% {
     background-position: 0%; } }
+
+.youtube-videos-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0; }
+  .youtube-videos-content .video-foreground, .youtube-videos-content .video-foreground iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; }
+  .youtube-videos-content .video-foreground iframe {
+    height: 150%; }
+
+@media (min-aspect-ratio: 16 / 9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%; } }
+
+@media (max-aspect-ratio: 16 / 9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%; } }
