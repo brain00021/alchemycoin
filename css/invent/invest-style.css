@@ -1,0 +1,16 @@
+#fh5co-intro .section1-icon .fh5co-block {
+  width: 25%; }
+
+#fh5co-intro .section1-icon .fh5co-intro-icon.laptop-icon:before {
+  content: url("../images/icon/laptop.png"); }
+
+#fh5co-intro .section1-icon .fh5co-intro-icon.low-icon:before {
+  content: url("../images/icon/low.png"); }
+
+#fh5co-intro .section1-icon .fh5co-intro-icon.clock-icon:before {
+  content: url("../images/icon/clock.png"); }
+
+#fh5co-intro .section1-icon .fh5co-intro-icon.money_box-icon:before {
+  content: url("../images/icon/money_box.png"); }
+
+/*# sourceMappingURL=invest-style.css.map */
