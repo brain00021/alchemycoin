@@ -1,16 +1,50 @@
 #fh5co-intro .section1-icon .fh5co-block {
-  width: 25%; }
+  width: 25%;
+  max-height: 300px; }
 
-#fh5co-intro .section1-icon .fh5co-intro-icon.laptop-icon:before {
+.fh5co-intro-icon.laptop-icon:before {
   content: url("../../images/icon/laptop.png"); }
 
-#fh5co-intro .section1-icon .fh5co-intro-icon.low-icon:before {
+.fh5co-intro-icon.low-icon:before {
   content: url("../../images/icon/low.png"); }
 
-#fh5co-intro .section1-icon .fh5co-intro-icon.clock-icon:before {
+.fh5co-intro-icon.clock-icon:before {
   content: url("../../images/icon/clock.png"); }
 
-#fh5co-intro .section1-icon .fh5co-intro-icon.money_box-icon:before {
+.fh5co-intro-icon.money_box-icon:before {
   content: url("../../images/icon/money_box.png"); }
+
+.fh5co-intro-icon.invest-icon:before {
+  content: url("../../images/icon/invest.png"); }
+
+#fh5co-work table {
+  margin-top: 50px; }
+  #fh5co-work table td {
+    text-align: left;
+    font-size: smaller; }
+
+#fh5co-work button {
+  margin-top: 30px; }
+  #fh5co-work button a {
+    text-decoration: none; }
+
+#fh5co-about .section-heading {
+  padding-bottom: 0; }
+
+#fh5co-about .tab-pane {
+  position: relative; }
+  #fh5co-about .tab-pane p {
+    width: 45%;
+    padding: 10px;
+    position: absolute;
+    color: #fff;
+    font-size: 14pt;
+    bottom: 10px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5); }
+  #fh5co-about .tab-pane img {
+    width: 50%;
+    height: auto;
+    padding: 30px 10px; }
 
 /*# sourceMappingURL=invest-style.css.map */
