@@ -10,36 +10,60 @@ block advantage
 							h4.col-md-8.col-md-offset-2.subtext.to-animate.fadeInUp.animated Using latest technology to increase efficiency and profitability for you
 					// Nav tabs
 			.row
-				ul.nav.nav-tabs(role='tablist')
-					li.active(role='presentation')
-						a(href='#blockchain', aria-controls='blockchain', role='tab', data-toggle='tab') Blockchain
-					li(role='presentation')
-						a(href='#cryp', aria-controls='cryp', role='tab', data-toggle='tab') Cryptocurrencies
-					li(role='presentation')
-						a(href='#ai', aria-controls='ai', role='tab', data-toggle='tab') Artificial Intelligence
-					li(role='presentation')
-						a(href='#bigdata', aria-controls='bigdata', role='tab', data-toggle='tab') Big Data
-					li(role='presentation')
-						a(href='#wechatpay', aria-controls='wechatpay', role='tab', data-toggle='tab') WeChat Pay
-					li(role='presentation')
-						a(href='#ailpay', aria-controls='ailpay', role='tab', data-toggle='tab') AliPay
-				// Tab panes
-				.tab-content.text-center
-					#blockchain.tab-pane.active(role='tabpanel')
-						p Blockchain Technology empowers our loans to be secured, trackable, and reliable.
-						img(src='./images/blockchain.jpg', alt='')
-					#cryp.tab-pane(role='tabpanel')
-						p Cryptocurrencies increase our efficency to lend and receive funds comparing to traditional bank transfering.
-						img(src='./images/bitcoin.jpeg', alt='')
-					#ai.tab-pane(role='tabpanel')
-						p Artificial Intelligence helps determine borrowers' credit risk without looking at their credit scores.
-						img(src='./images/ai.jpg', alt='')
-					#bigdata.tab-pane(role='tabpanel')
-						p Big Data analysis every borrowers' behaviors to predict their future actions and default rates.
-						img(src='./images/bigdata.jpg', alt='')
-					#wechatpay.tab-pane(role='tabpanel')
-						p WeChat Pay is also available on our platform so you can still lend or receive money without a US Bank account.
-						img(src='./images/wechat.jpg', alt='')
-					#ailpay.tab-pane(role='tabpanel')
-						p AliPay is also available on our platform so you can still lend or receive money without a US Bank account.
-						img(src='./images/alipay.jpg', alt='')
+				#carousel-advantages.carousel.slide(data-ride='carousel')
+					// Indicators
+					ol.carousel-indicators
+						li.active(data-target='#carousel-advantages', data-slide-to='0')
+						li(data-target='#carousel-advantages', data-slide-to='1')
+						li(data-target='#carousel-advantages', data-slide-to='2')
+						li(data-target='#carousel-advantages', data-slide-to='3')
+						li(data-target='#carousel-advantages', data-slide-to='4')
+						li(data-target='#carousel-advantages', data-slide-to='5')
+					// Wrapper for slides
+					.carousel-inner(role='listbox')
+						.item.active
+							img(src='./images/blockchain.jpg', alt='...')
+							.carousel-caption Blockchain Technology empowers our loans to be secured, trackable, and reliable.
+						.item
+							img(src='./images/bitcoin.jpeg', alt='...')
+							.carousel-caption Cryptocurrencies increase our efficency to lend and receive funds comparing to traditional bank transfering.
+						.item
+							img(src='./images/ai.jpg', alt='...')
+							.carousel-caption Artificial Intelligence helps determine borrowers' credit risk without looking at their credit scores.
+						.item
+							img(src='./images/bigdata.jpg', alt='...')
+							.carousel-caption Big Data analysis every borrowers' behaviors to predict their future actions and default rates.
+						.item
+							img(src='./images/wechat.jpg', alt='...')
+							.carousel-caption WeChat Pay is also available on our platform so you can still lend or receive money without a US Bank account.
+						.item
+							img(src='./images/alipay.jpg', alt='...')
+							.carousel-caption AliPay is also available on our platform so you can still lend or receive money without a US Bank account.
+					// Controls
+					a.left.carousel-control(href='#carousel-advantages', role='button', data-slide='prev')
+						span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+						span.sr-only Previous
+					a.right.carousel-control(href='#carousel-advantages', role='button', data-slide='next')
+						span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+						span.sr-only Next
+			//- .row
+
+			//- 	.tab-content.text-center
+			//- 		#blockchain.tab-pane.active(role='tabpanel')
+			//- 			p Blockchain Technology empowers our loans to be secured, trackable, and reliable.
+			//- 			img(src='./images/blockchain.jpg', alt='')
+			//- 		#cryp.tab-pane(role='tabpanel')
+			//- 			p Cryptocurrencies increase our efficency to lend and receive funds comparing to traditional bank transfering.
+			//- 			img(src='./images/bitcoin.jpeg', alt='')
+			//- 		#ai.tab-pane(role='tabpanel')
+			//- 			p Artificial Intelligence helps determine borrowers' credit risk without looking at their credit scores.
+			//- 			img(src='./images/ai.jpg', alt='')
+			//- 		#bigdata.tab-pane(role='tabpanel')
+			//- 			p Big Data analysis every borrowers' behaviors to predict their future actions and default rates.
+			//- 			img(src='./images/bigdata.jpg', alt='')
+			//- 		#wechatpay.tab-pane(role='tabpanel')
+			//- 			p WeChat Pay is also available on our platform so you can still lend or receive money without a US Bank account.
+			//- 			img(src='./images/wechat.jpg', alt='')
+			//- 		#ailpay.tab-pane(role='tabpanel')
+			//- 			p AliPay is also available on our platform so you can still lend or receive money without a US Bank account.
+			//- 			img(src='./images/alipay.jpg', alt='')
