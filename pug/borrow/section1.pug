@@ -1,5 +1,5 @@
 block section1
-    section#fh5co-home(data-section='home', style='background-image: url(images/full_image_2.jpg);', data-stellar-background-ratio='0.5')
+    section#fh5co-home.borrow-wrapper(data-section='home', style='background-image: url(images/full_image_2.jpg);', data-stellar-background-ratio='0.5')
         .gradient
         .container
             .text-wrap
@@ -12,3 +12,8 @@ block section1
                                 button.btn.focus-button-style
                                     a(href='#', data-nav-section='Invest') View Availabilities
         .slant
+        //- 影片介紹
+        .youtube-videos-content
+            .video-background
+                .video-foreground
+                    iframe#commercialVideo(src='https://www.youtube.com/embed/XEoeOvViYQs?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=XEoeOvViYQs', frameborder='0', allowfullscreen)
