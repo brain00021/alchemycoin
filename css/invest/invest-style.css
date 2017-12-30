@@ -47,4 +47,11 @@
     height: auto;
     padding: 30px 10px; }
 
+#fh5co-contact ul.working-hours {
+  -webkit-padding-start: 0px; }
+  #fh5co-contact ul.working-hours li {
+    list-style: none; }
+    #fh5co-contact ul.working-hours li.date {
+      font-weight: bolder; }
+
 /*# sourceMappingURL=invest-style.css.map */
