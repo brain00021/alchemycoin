@@ -55,13 +55,18 @@ a.fh5co-project-item {
   100% {
     background-position: 0%; } }
 
+#fh5co-home.borrow-wrapper .gradient {
+  opacity: 0.8; }
+
 .youtube-videos-content {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 0; }
+  z-index: 1;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.8); }
   .youtube-videos-content .video-foreground, .youtube-videos-content .video-foreground iframe {
     position: absolute;
     top: 0;
@@ -71,6 +76,26 @@ a.fh5co-project-item {
     pointer-events: none; }
   .youtube-videos-content .video-foreground iframe {
     height: 150%; }
+
+.social-circle {
+  margin-top: 10px; }
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 15px auto;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .footer-menu li {
+    display: inline-block; }
+
+.footer-end {
+  padding: 10px;
+  font-size: 12px;
+  background: #52d3aa;
+  color: rgba(255, 255, 255, 0.8); }
 
 @media (min-aspect-ratio: 16 / 9) {
   .video-foreground {
