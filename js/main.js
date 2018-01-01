@@ -432,6 +432,32 @@
 		}
 	};
 
+		var joinAnimate = function() {
+		var join = $('#fh5co-join');
+		if ( join.length > 0 ) {	
+
+			join.waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+					setTimeout(function() {
+						join.find('.to-animate').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, 200);
+
+					$(this.element).addClass('animated');
+						
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
 
 	
 	
@@ -465,6 +491,7 @@
 		aboutAnimate();
 		countersAnimate();
 		contactAnimate();
+		joinAnimate();
 		
 
 	});

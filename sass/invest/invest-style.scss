@@ -92,6 +92,39 @@ $form-group-margin-bottom: 30px !default;
         }
     }
 }
+#fh5co-join{
+    overflow: hidden;
+    position: relative;
+    padding: 2em 0;
+	// color: rgba(255,255,255,.8);
+    @include fh5co-gradient;
+    .section-heading{
+        margin-bottom: 0;
+        h3{
+            color: #eee;
+        }
+    }
+
+    &:after {
+        position: absolute;
+        transform: rotate(-1.7deg);
+        -ms-transform: rotate(-1.7deg);
+        -webkit-transform: rotate(-1.7deg);
+        -o-transform: rotate(-1.7deg);
+        -moz-transform: rotate(-1.7deg);
+        background-color: #fff;
+        content: "";
+        z-index: 3;
+        display: inline-block;
+        height: 70px;
+        padding: 0;
+        width: 101%;
+    }
+    &:after {
+		bottom: 0;
+		margin-bottom: -35px;
+	}
+}
 
 #fh5co-contact {
     ul.working-hours {
@@ -103,5 +136,11 @@ $form-group-margin-bottom: 30px !default;
                 font-weight: bolder;
             }
         }
+    }
+}
+
+button{
+    a:focus, a:hover{
+        text-decoration: none;
     }
 }
