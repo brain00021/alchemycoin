@@ -207,6 +207,34 @@
 		}
 	};
 
+	var investAnimate = function() {
+		if ( $('#fh5co-invest').length > 0 ) {	
+
+			$('#fh5co-invest').waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+
+					setTimeout(function() {
+						$('#fh5co-invest .to-animate').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeInRight animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, 1000);
+
+					
+					$(this.element).addClass('animated');
+						
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
+
 	var workAnimate = function() {
 		if ( $('#fh5co-work').length > 0 ) {	
 
@@ -433,6 +461,33 @@
 	};
 
 
+		var joinAnimate = function() {
+		var join = $('#fh5co-join');
+		if ( join.length > 0 ) {	
+
+			join.waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+					setTimeout(function() {
+						join.find('.to-animate').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, 200);
+
+					$(this.element).addClass('animated');
+						
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
+
 	
 	
 
@@ -465,6 +520,8 @@
 		aboutAnimate();
 		countersAnimate();
 		contactAnimate();
+		joinAnimate();
+		investAnimate();
 		
 
 	});

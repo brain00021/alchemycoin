@@ -422,16 +422,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   width: 101%; }
 
-#fh5co-intro {
+#fh5co-intro, #fh5co-invest {
   position: relative;
   bottom: 0;
   margin-top: -150px;
   z-index: 10;
   padding-bottom: 7em; }
   @media screen and (max-width: 768px) {
-    #fh5co-intro {
+    #fh5co-intro, #fh5co-invest {
       padding-bottom: 3em; } }
-  #fh5co-intro > div {
+  #fh5co-intro > div, #fh5co-invest > div {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -441,7 +441,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap; }
-  #fh5co-intro .fh5co-block {
+  #fh5co-intro .fh5co-block, #fh5co-invest .fh5co-block {
     width: 33.33%;
     float: left;
     text-align: center;
@@ -463,9 +463,9 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     backgroun-repeat: no-repeat; }
     @media screen and (max-width: 768px) {
-      #fh5co-intro .fh5co-block {
+      #fh5co-intro .fh5co-block, #fh5co-invest .fh5co-block {
         width: 100%; } }
-    #fh5co-intro .fh5co-block > .overlay-darker {
+    #fh5co-intro .fh5co-block > .overlay-darker, #fh5co-invest .fh5co-block > .overlay-darker {
       z-index: 8;
       opacity: .5;
       background: #474747;
@@ -474,7 +474,7 @@ h1, h2, h3, h4, h5, h6 {
       right: 0;
       top: 0;
       bottom: 0; }
-    #fh5co-intro .fh5co-block > .overlay {
+    #fh5co-intro .fh5co-block > .overlay, #fh5co-invest .fh5co-block > .overlay {
       background: #fff;
       opacity: 1;
       z-index: 9;
@@ -486,30 +486,30 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
-    #fh5co-intro .fh5co-block > .fh5co-text {
+    #fh5co-intro .fh5co-block > .fh5co-text, #fh5co-invest .fh5co-block > .fh5co-text {
       position: relative;
       z-index: 10; }
-      #fh5co-intro .fh5co-block > .fh5co-text .fh5co-intro-icon {
+      #fh5co-intro .fh5co-block > .fh5co-text .fh5co-intro-icon, #fh5co-invest .fh5co-block > .fh5co-text .fh5co-intro-icon {
         font-size: 50px;
         color: #52d3aa;
         margin-bottom: 30px;
         display: block; }
-    #fh5co-intro .fh5co-block h2 {
+    #fh5co-intro .fh5co-block h2, #fh5co-invest .fh5co-block h2 {
       font-size: 24px;
       font-weight: 400; }
-    #fh5co-intro .fh5co-block:hover > .overlay, #fh5co-intro .fh5co-block:focus > .overlay {
+    #fh5co-intro .fh5co-block:hover > .overlay, #fh5co-intro .fh5co-block:focus > .overlay, #fh5co-invest .fh5co-block:hover > .overlay, #fh5co-invest .fh5co-block:focus > .overlay {
       opacity: 0;
       z-index: 9; }
-    #fh5co-intro .fh5co-block:hover > .fh5co-text, #fh5co-intro .fh5co-block:focus > .fh5co-text {
+    #fh5co-intro .fh5co-block:hover > .fh5co-text, #fh5co-intro .fh5co-block:focus > .fh5co-text, #fh5co-invest .fh5co-block:hover > .fh5co-text, #fh5co-invest .fh5co-block:focus > .fh5co-text {
       color: #fff; }
-      #fh5co-intro .fh5co-block:hover > .fh5co-text .fh5co-intro-icon, #fh5co-intro .fh5co-block:focus > .fh5co-text .fh5co-intro-icon {
+      #fh5co-intro .fh5co-block:hover > .fh5co-text .fh5co-intro-icon, #fh5co-intro .fh5co-block:focus > .fh5co-text .fh5co-intro-icon, #fh5co-invest .fh5co-block:hover > .fh5co-text .fh5co-intro-icon, #fh5co-invest .fh5co-block:focus > .fh5co-text .fh5co-intro-icon {
         color: #fff; }
-    #fh5co-intro .fh5co-block:hover h2, #fh5co-intro .fh5co-block:focus h2 {
+    #fh5co-intro .fh5co-block:hover h2, #fh5co-intro .fh5co-block:focus h2, #fh5co-invest .fh5co-block:hover h2, #fh5co-invest .fh5co-block:focus h2 {
       color: #fff; }
-    #fh5co-intro .fh5co-block:hover .btn, #fh5co-intro .fh5co-block:focus .btn {
+    #fh5co-intro .fh5co-block:hover .btn, #fh5co-intro .fh5co-block:focus .btn, #fh5co-invest .fh5co-block:hover .btn, #fh5co-invest .fh5co-block:focus .btn {
       border: 2px solid #fff !important;
       background: transparent; }
-      #fh5co-intro .fh5co-block:hover .btn:hover, #fh5co-intro .fh5co-block:focus .btn:hover {
+      #fh5co-intro .fh5co-block:hover .btn:hover, #fh5co-intro .fh5co-block:focus .btn:hover, #fh5co-invest .fh5co-block:hover .btn:hover, #fh5co-invest .fh5co-block:focus .btn:hover {
         background: #52d3aa !important;
         border: 2px solid #52d3aa !important; }
 
@@ -557,10 +557,10 @@ h1, h2, h3, h4, h5, h6 {
       -o-transform: scale(1.1);
       transform: scale(1.1); }
 
-#fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about {
+#fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about, #fh5co-join {
   padding: 4em 0; }
   @media screen and (max-width: 768px) {
-    #fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about {
+    #fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about, #fh5co-join {
       padding: 2em 0; } }
 
 #fh5co-services, #fh5co-work, #fh5co-counters {
