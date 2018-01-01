@@ -2,6 +2,9 @@
   width: 25%;
   max-height: 300px; }
 
+#fh5co-invest .fh5co-block {
+  width: 33.3%; }
+
 .fh5co-intro-icon.laptop-icon:before {
   content: url("../../images/icon/laptop.png"); }
 
@@ -16,6 +19,9 @@
 
 .fh5co-intro-icon.invest-icon:before {
   content: url("../../images/icon/invest.png"); }
+
+#fh5co-work .table-responsive {
+  border: none; }
 
 #fh5co-work table {
   margin-top: 50px; }
@@ -90,7 +96,27 @@
     #fh5co-contact ul.working-hours li.date {
       font-weight: bolder; }
 
-button a:focus, button a:hover {
+button a:focus,
+button a:hover {
   text-decoration: none; }
+
+@media screen and (max-width: 700px) {
+  #fh5co-intro .section1-icon .fh5co-block {
+    width: 50%;
+    min-height: 200px;
+    font-size: 14px; }
+    #fh5co-intro .section1-icon .fh5co-block h2 {
+      font-size: 18px; }
+  #fh5co-invest .fh5co-block {
+    width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  #fh5co-intro .section1-icon .fh5co-block {
+    width: 100%;
+    font-size: 12px; }
+    #fh5co-intro .section1-icon .fh5co-block h2 {
+      font-size: 16px; }
+    #fh5co-intro .section1-icon .fh5co-block .fh5co-intro-icon {
+      font-size: 36px; } }
 
 /*# sourceMappingURL=invest-style.css.map */
