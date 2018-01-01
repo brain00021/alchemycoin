@@ -106,3 +106,20 @@ a.fh5co-project-item {
   .video-foreground {
     width: 300%;
     left: -100%; } }
+
+.howwork-wrapper {
+  text-align: center;
+  position: relative;
+  margin: 15px auto; }
+  .howwork-wrapper img {
+    width: 100%; }
+
+.sponser-wrapper {
+  text-align: center;
+  margin: 15px auto; }
+  .sponser-wrapper .sponser {
+    width: 150px;
+    display: inline-block;
+    margin-left: 15px; }
+    .sponser-wrapper .sponser img {
+      width: 100%; }
