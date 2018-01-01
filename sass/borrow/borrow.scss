@@ -90,3 +90,20 @@ li{ display: inline-block;}
 @media (max-aspect-ratio: 16/9) {
   .video-foreground { width: 300%; left: -100%; }
 }
+
+// 工作項目
+.howwork-wrapper{
+    text-align: center;
+    position: relative;
+    margin:15px auto;
+    img{width:100%;}
+}
+.sponser-wrapper{
+    text-align: center;
+    margin:15px auto;
+    .sponser{
+        width:150px;
+        display: inline-block; margin-left:15px;
+        img{width:100%;}
+    }
+}
