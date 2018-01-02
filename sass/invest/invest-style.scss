@@ -88,40 +88,23 @@ $form-group-margin-bottom: 30px !default;
     overflow: hidden;
     position: relative;
     padding: 2em 0; // color: rgba(255,255,255,.8);
-    @include fh5co-gradient;
     .section-heading {
         margin-bottom: 0;
-        h3 {
-            color: #eee;
-        }
-    }
-    &:after {
-        position: absolute;
-        transform: rotate(-1.7deg);
-        -ms-transform: rotate(-1.7deg);
-        -webkit-transform: rotate(-1.7deg);
-        -o-transform: rotate(-1.7deg);
-        -moz-transform: rotate(-1.7deg);
-        background-color: #fff;
-        content: "";
-        z-index: 3;
-        display: inline-block;
-        height: 70px;
-        padding: 0;
-        width: 101%;
-    }
-    &:after {
-        bottom: 0;
-        margin-bottom: -35px;
     }
 }
 
 #fh5co-contact {
+    background: transparent url('../../images/contact-bg.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #3b3d40;
+    h3{
+        color: #000;
+    }
     ul.working-hours {
         -webkit-padding-start: 0px;
         li {
             list-style: none;
-            ;
             &.date {
                 font-weight: bolder;
             }
