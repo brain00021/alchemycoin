@@ -37,22 +37,6 @@
 #fh5co-about .section-heading {
   padding-bottom: 0; }
 
-#fh5co-about .tab-pane {
-  position: relative; }
-  #fh5co-about .tab-pane p {
-    width: 45%;
-    padding: 10px;
-    position: absolute;
-    color: #fff;
-    font-size: 14pt;
-    bottom: 10px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.5); }
-  #fh5co-about .tab-pane img {
-    width: 50%;
-    height: auto;
-    padding: 30px 10px; }
-
 #fh5co-join {
   overflow: hidden;
   position: relative;
@@ -99,6 +83,11 @@
 button a:focus,
 button a:hover {
   text-decoration: none; }
+
+@media screen and (min-width: 1000px) {
+  #fh5co-about .carousel {
+    width: 1000px;
+    margin: 0 auto; } }
 
 @media screen and (max-width: 700px) {
   #fh5co-home, #fh5co-home .text-wrap {

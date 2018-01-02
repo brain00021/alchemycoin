@@ -82,24 +82,6 @@ $form-group-margin-bottom: 30px !default;
     .section-heading {
         padding-bottom: 0;
     }
-    .tab-pane {
-        position: relative;
-        p {
-            width: 45%;
-            padding: 10px;
-            position: absolute;
-            color: #fff;
-            font-size: 14pt;
-            bottom: 10px;
-            left: 20px;
-            background-color: rgba($color: #000000, $alpha: .5);
-        }
-        img {
-            width: 50%;
-            height: auto;
-            padding: 30px 10px;
-        }
-    }
 }
 
 #fh5co-join {
@@ -151,6 +133,14 @@ button {
     a:focus,
     a:hover {
         text-decoration: none;
+    }
+}
+@media screen and (min-width:1000px) {
+    #fh5co-about {
+        .carousel{
+            width: 1000px;
+            margin: 0 auto;
+        }
     }
 }
 
