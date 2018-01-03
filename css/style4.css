@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   top: 0;
   margin-top: 40px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     #alchemy-header {
       margin-top: 0;
       background: #fff;
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     border-radius: 0px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       #alchemy-header .navbar-default {
         margin-top: 0px;
         padding-right: 0px;
@@ -429,7 +429,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -150px;
   z-index: 10;
   padding-bottom: 7em; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     #alchemy-intro {
       padding-bottom: 3em; } }
   #alchemy-intro > div {
@@ -463,7 +463,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     position: relative;
     backgroun-repeat: no-repeat; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       #alchemy-intro .alchemy-block {
         width: 100%; } }
     #alchemy-intro .alchemy-block > .overlay-darker {
@@ -560,13 +560,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #alchemy-services, #alchemy-testimonials, #alchemy-counters, #alchemy-work, #alchemy-contact, #alchemy-about {
   padding: 4em 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     #alchemy-services, #alchemy-testimonials, #alchemy-counters, #alchemy-work, #alchemy-contact, #alchemy-about {
       padding: 2em 0; } }
 
 #alchemy-services, #alchemy-work, #alchemy-counters {
   padding: 7em 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     #alchemy-services, #alchemy-work, #alchemy-counters {
       padding: 4em 0; } }
 
@@ -633,7 +633,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
   padding: 9em 0 10em 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     #alchemy-counters {
       padding: 4em 0; } }
   #alchemy-counters .alchemy-overlay {
@@ -958,14 +958,14 @@ h1, h2, h3, h4, h5, h6 {
       left: 50%;
       margin-left: -40px;
       bottom: 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .section-heading h2 {
         font-size: 30px; } }
   .section-heading h3 {
     font-weight: 300;
     line-height: 1.5;
     color: #929292; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .section-heading h3 {
         font-size: 24px !important;
         line-height: 34px; } }
@@ -1055,7 +1055,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 44px;
   width: 25px;
   border-bottom: none !important; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .alchemy-nav-toggle {
       display: block; } }
 
@@ -1163,7 +1163,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 500px;
   position: relative; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     #map {
       height: 200px; } }
 
@@ -1199,19 +1199,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .row-bottom-padded-lg {
   padding-bottom: 7em; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .row-bottom-padded-lg {
       padding-bottom: 2em; } }
 
 .row-bottom-padded-md {
   padding-bottom: 4em; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .row-bottom-padded-md {
       padding-bottom: 2em; } }
 
 .row-bottom-padded-sm {
   padding-bottom: 2em; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .row-bottom-padded-sm {
       padding-bottom: 2em; } }
 
