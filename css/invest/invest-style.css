@@ -68,7 +68,7 @@ button a:hover {
     margin: 0 auto; } }
 
 @media screen and (max-width: 700px) {
-  #alchemy-home,#alchemy-container, #alchemy-home,#alchemy-container .text-wrap {
+  #alchemy-home, #alchemy-home .text-wrap {
     height: 100vh; }
   #alchemy-intro .section1-icon .alchemy-block {
     width: 50%;

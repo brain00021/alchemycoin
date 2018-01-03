@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: 0s;
     transition: 0s; }
 
-#alchemy-home,#alchemy-container {
+#alchemy-home {
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
@@ -354,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #329998;
   color: #fff;
   overflow: hidden; }
-  #alchemy-home,#alchemy-container .gradient {
+  #alchemy-home .gradient {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -374,32 +374,32 @@ h1, h2, h3, h4, h5, h6 {
     background-image: -o-linear-gradient(top left, #329998 0%, #6cc99c 100%);
     background-image: linear-gradient(to bottom right, #329998 0%, #6cc99c 100%);
     background-image: -ms-linear-gradient(top left, #329998 0%, #6cc99c 100%); }
-  #alchemy-home,#alchemy-container, #alchemy-home,#alchemy-container .text-wrap {
+  #alchemy-home, #alchemy-home .text-wrap {
     height: 900px; }
-  #alchemy-home,#alchemy-container .text-wrap {
+  #alchemy-home .text-wrap {
     display: table;
     width: 100%;
     position: relative;
     z-index: 4; }
-  #alchemy-home,#alchemy-container .text-inner {
+  #alchemy-home .text-inner {
     display: table-cell;
     vertical-align: middle;
     text-align: center; }
-    #alchemy-home,#alchemy-container .text-inner a {
+    #alchemy-home .text-inner a {
       color: white;
       border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
-      #alchemy-home,#alchemy-container .text-inner a:hover, #alchemy-home,#alchemy-container .text-inner a:active, #alchemy-home,#alchemy-container .text-inner a:focus {
+      #alchemy-home .text-inner a:hover, #alchemy-home .text-inner a:active, #alchemy-home .text-inner a:focus {
         text-decoration: none;
         color: white;
         border-bottom: 1px dashed white; }
-    #alchemy-home,#alchemy-container .text-inner h1 {
+    #alchemy-home .text-inner h1 {
       font-size: 50px;
       color: white;
       margin: 0 0 20px 0; }
-    #alchemy-home,#alchemy-container .text-inner h2 {
+    #alchemy-home .text-inner h2 {
       font-size: 28px;
       line-height: 38px;
       font-weight: 300;

@@ -151,15 +151,15 @@
 	// Home
 
 	var homeAnimate = function() {
-		if ( $('#alchemy-home,#alchemy-container').length > 0 ) {	
+		if ( $('#alchemy-home').length > 0 ) {	
 
-			$('#alchemy-home,#alchemy-container').waypoint( function( direction ) {
+			$('#alchemy-home').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						$('#alchemy-home,#alchemy-container .to-animate').each(function( k ) {
+						$('#alchemy-home .to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
