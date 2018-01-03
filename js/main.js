@@ -23,7 +23,7 @@
 	// Burger Menu
 	var burgerMenu = function() {
 
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+		$('body').on('click', '.js-alchemy-nav-toggle', function(event){
 
 			event.preventDefault();
 
@@ -72,7 +72,7 @@
 		    if ( navbar.is(':visible')) {
 		    	navbar.removeClass('in');
 		    	navbar.attr('aria-expanded', 'false');
-		    	$('.js-fh5co-nav-toggle').removeClass('active');
+		    	$('.js-alchemy-nav-toggle').removeClass('active');
 		    }
 
 		    event.preventDefault();
@@ -126,18 +126,18 @@
 
 		$(window).scroll(function(event){
 
-		   	var header = $('#fh5co-header'),
+		   	var header = $('#alchemy-header'),
 				scrlTop = $(this).scrollTop();
 
 			if ( scrlTop > 500 && scrlTop <= 2000 ) {
-				header.addClass('navbar-fixed-top fh5co-animated slideInDown');
+				header.addClass('navbar-fixed-top alchemy-animated slideInDown');
 				$('.register_btn').removeClass('register_btn_style');
 			} else if ( scrlTop <= 500) {
 				if ( header.hasClass('navbar-fixed-top') ) {
-					header.addClass('navbar-fixed-top fh5co-animated slideOutUp');
+					header.addClass('navbar-fixed-top alchemy-animated slideOutUp');
 					$('.register_btn').addClass('register_btn_style');
 					setTimeout(function(){
-						header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
+						header.removeClass('navbar-fixed-top alchemy-animated slideInDown slideOutUp');
 					}, 100 );
 				}
 			} 
@@ -151,15 +151,15 @@
 	// Home
 
 	var homeAnimate = function() {
-		if ( $('#fh5co-home').length > 0 ) {	
+		if ( $('#alchemy-home').length > 0 ) {	
 
-			$('#fh5co-home').waypoint( function( direction ) {
+			$('#alchemy-home').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						$('#fh5co-home .to-animate').each(function( k ) {
+						$('#alchemy-home .to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -180,15 +180,15 @@
 
 
 	var introAnimate = function() {
-		if ( $('#fh5co-intro').length > 0 ) {	
+		if ( $('#alchemy-intro').length > 0 ) {	
 
-			$('#fh5co-intro').waypoint( function( direction ) {
+			$('#alchemy-intro').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						$('#fh5co-intro .to-animate').each(function( k ) {
+						$('#alchemy-intro .to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -208,15 +208,15 @@
 	};
 
 	var investAnimate = function() {
-		if ( $('#fh5co-invest').length > 0 ) {	
+		if ( $('#alchemy-invest').length > 0 ) {	
 
-			$('#fh5co-invest').waypoint( function( direction ) {
+			$('#alchemy-invest').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						$('#fh5co-invest .to-animate').each(function( k ) {
+						$('#alchemy-invest .to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -236,15 +236,15 @@
 	};
 
 	var workAnimate = function() {
-		if ( $('#fh5co-work').length > 0 ) {	
+		if ( $('#alchemy-work').length > 0 ) {	
 
-			$('#fh5co-work').waypoint( function( direction ) {
+			$('#alchemy-work').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						$('#fh5co-work .to-animate').each(function( k ) {
+						$('#alchemy-work .to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -265,7 +265,7 @@
 
 
 	var testimonialAnimate = function() {
-		var testimonial = $('#fh5co-testimonials');
+		var testimonial = $('#alchemy-testimonials');
 		if ( testimonial.length > 0 ) {	
 
 			testimonial.waypoint( function( direction ) {
@@ -307,7 +307,7 @@
 	};
 
 	var servicesAnimate = function() {
-		var services = $('#fh5co-services');
+		var services = $('#alchemy-services');
 		if ( services.length > 0 ) {	
 
 			services.waypoint( function( direction ) {
@@ -350,7 +350,7 @@
 	};
 
 	var aboutAnimate = function() {
-		var about = $('#fh5co-about');
+		var about = $('#alchemy-about');
 		if ( about.length > 0 ) {	
 
 			about.waypoint( function( direction ) {
@@ -380,7 +380,7 @@
 	};
 
 	var countersAnimate = function() {
-		var counters = $('#fh5co-counters');
+		var counters = $('#alchemy-counters');
 		if ( counters.length > 0 ) {	
 
 			counters.waypoint( function( direction ) {
@@ -434,7 +434,7 @@
 
 
 	var contactAnimate = function() {
-		var contact = $('#fh5co-contact');
+		var contact = $('#alchemy-contact');
 		if ( contact.length > 0 ) {	
 
 			contact.waypoint( function( direction ) {
@@ -462,7 +462,7 @@
 
 
 		var joinAnimate = function() {
-		var join = $('#fh5co-join');
+		var join = $('#alchemy-join');
 		if ( join.length > 0 ) {	
 
 			join.waypoint( function( direction ) {

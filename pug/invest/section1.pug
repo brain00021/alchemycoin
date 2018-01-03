@@ -1,5 +1,5 @@
 block section1
-    section#fh5co-home(data-section='home', style='background-image: url(images/full_image_2.jpg);', data-stellar-background-ratio='0.5')
+    section#alchemy-home(data-section='home', style='background-image: url(images/full_image_2.jpg);', data-stellar-background-ratio='0.5')
         .gradient
         .container
             .text-wrap
@@ -12,33 +12,38 @@ block section1
                                 button.btn.focus-button-style
                                     a(href='#', data-nav-section='Invest') View Availabilities
         .slant
-    section#fh5co-intro
+        //- 影片介紹
+        .youtube-videos-content
+            .video-background
+                .video-foreground
+                    iframe#commercialVideo(src='https://www.youtube.com/embed/XEoeOvViYQs?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=XEoeOvViYQs', frameborder='0', allowfullscreen)
+    section#alchemy-intro
         .container
             .row
                 .col-md-12.section-heading.text-center.section1-icon
-                    .fh5co-block.to-animate(style='background-image: url(images/img_7.jpg);')
+                    .alchemy-block.to-animate(style='background-image: url(images/img_7.jpg);')
                         .overlay-darker
                         .overlay
-                        .fh5co-text
-                            i.fh5co-intro-icon.laptop-icon
+                        .alchemy-text
+                            i.alchemy-intro-icon.laptop-icon
                             h2 No SSN Required
-                    .fh5co-block.to-animate(style='background-image: url(images/img_8.jpg);')
+                    .alchemy-block.to-animate(style='background-image: url(images/img_8.jpg);')
                         .overlay-darker
                         .overlay
-                        .fh5co-text
-                            i.fh5co-intro-icon.low-icon
+                        .alchemy-text
+                            i.alchemy-intro-icon.low-icon
                             h2 Low Interest Rate
-                    .fh5co-block.to-animate(style='background-image: url(images/img_10.jpg);')
+                    .alchemy-block.to-animate(style='background-image: url(images/img_10.jpg);')
                         .overlay-darker
                         .overlay
-                        .fh5co-text
-                            i.fh5co-intro-icon.clock-icon
+                        .alchemy-text
+                            i.alchemy-intro-icon.clock-icon
                             h2 Easy Application Process
-                    .fh5co-block.to-animate(style='background-image: url(images/img_10.jpg);')
+                    .alchemy-block.to-animate(style='background-image: url(images/img_10.jpg);')
                         .overlay-darker
                         .overlay
-                        .fh5co-text
-                            i.fh5co-intro-icon.money_box-icon
+                        .alchemy-text
+                            i.alchemy-intro-icon.money_box-icon
                             h2 Build Credit History
     
 
