@@ -16,6 +16,9 @@
 .register_btn_style{
     background-color: #e28b00;
     border-radius: 150px;
+    @media screen  and (max-width: 769px){
+        background-color:#fff;
+    }
 }
 #alchemy-header #navbar li a{
     color:rgba(#fff,0.8);
@@ -45,7 +48,9 @@
     }
 }
 // 首頁的設計
-#alchemy-home.borrow-wrapper{
+
+
+#alchemy-home,#alchemy-container.borrow-wrapper{
     .gradient{opacity: 0.8;}
 }
  .youtube-videos-content{
@@ -106,4 +111,11 @@ li{ display: inline-block;}
         display: inline-block; margin-left:15px;
         img{width:100%;}
     }
+}
+
+//分頁的設計
+
+#alchemy-container{
+min-height: 100vh;
+
 }

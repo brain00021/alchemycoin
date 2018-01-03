@@ -23,6 +23,9 @@
 .register_btn_style {
   background-color: #e28b00;
   border-radius: 150px; }
+  @media screen and (max-width: 769px) {
+    .register_btn_style {
+      background-color: #fff; } }
 
 #alchemy-header #navbar li a {
   color: rgba(255, 255, 255, 0.8);
@@ -55,7 +58,7 @@ a.alchemy-project-item {
   100% {
     background-position: 0%; } }
 
-#alchemy-home.borrow-wrapper .gradient {
+#alchemy-home .gradient, #alchemy-container.borrow-wrapper .gradient {
   opacity: 0.8; }
 
 .youtube-videos-content {
@@ -123,3 +126,6 @@ a.alchemy-project-item {
     margin-left: 15px; }
     .sponser-wrapper .sponser img {
       width: 100%; }
+
+#alchemy-container {
+  min-height: 100vh; }
