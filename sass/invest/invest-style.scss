@@ -14,7 +14,7 @@ $brand-overlay-color: #3b3d40;
 $brand-bg-color: $brand-white;
 $input-border-focus: $brand-primary !default;
 $form-group-margin-bottom: 30px !default;
-@mixin fh5co-gradient() {
+@mixin alchemy-gradient() {
     // Gradient
     background-color: $brand-primary;
     /* IE9, iOS 3.2+ */
@@ -27,20 +27,20 @@ $form-group-margin-bottom: 30px !default;
     background-image: -ms-repeating-linear-gradient(top left, rgb(63, 149, 234) 0%, rgb(82, 211, 170) 100%);
 }
 
-#fh5co-intro .section1-icon {
-    .fh5co-block {
+#alchemy-intro .section1-icon {
+    .alchemy-block {
         width: 25%;
         max-height: 300px;
     }
 }
 
-#fh5co-invest{
-    .fh5co-block{
+#alchemy-invest{
+    .alchemy-block{
         width: 33.3%;
     }
 }
 
-.fh5co-intro-icon {
+.alchemy-intro-icon {
     //invest section 1
     &.laptop-icon:before {
         content: url('../../images/icon/laptop.png')
@@ -59,7 +59,7 @@ $form-group-margin-bottom: 30px !default;
     }
 }
 
-#fh5co-work {
+#alchemy-work {
     .table-responsive {
         border: none;
     }
@@ -78,13 +78,13 @@ $form-group-margin-bottom: 30px !default;
     }
 }
 
-#fh5co-about {
+#alchemy-about {
     .section-heading {
         padding-bottom: 0;
     }
 }
 
-#fh5co-join {
+#alchemy-join {
     overflow: hidden;
     position: relative;
     padding: 2em 0; // color: rgba(255,255,255,.8);
@@ -93,7 +93,7 @@ $form-group-margin-bottom: 30px !default;
     }
 }
 
-#fh5co-contact {
+#alchemy-contact {
     background: transparent url('../../images/contact-bg.jpg') center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,7 +119,7 @@ button {
     }
 }
 @media screen and (min-width:1000px) {
-    #fh5co-about {
+    #alchemy-about {
         .carousel{
             width: 1000px;
             margin: 0 auto;
@@ -128,12 +128,12 @@ button {
 }
 
 @media screen and (max-width:700px) {
-    #fh5co-home, #fh5co-home .text-wrap{
+    #alchemy-home, #alchemy-home .text-wrap{
         height: 100vh;
     }
-    #fh5co-intro {
+    #alchemy-intro {
         .section1-icon {
-            .fh5co-block {
+            .alchemy-block {
                 width: 50%;
                 min-height: 200px;
                 font-size: 14px;
@@ -143,25 +143,25 @@ button {
             }
         }
     }
-    #fh5co-invest{
-        .fh5co-block{
+    #alchemy-invest{
+        .alchemy-block{
             width: 100%;
         }
     }
 }
-#fh5co-invest{
+#alchemy-invest{
     margin-top: -50px;
 }
 
 @media screen and (max-width:400px) {
-    #fh5co-intro .section1-icon {
-        .fh5co-block {
+    #alchemy-intro .section1-icon {
+        .alchemy-block {
             width: 100%;
             font-size: 12px;
             h2 {
                 font-size: 16px;
             }
-            .fh5co-intro-icon {
+            .alchemy-intro-icon {
                 font-size: 36px;
             }
         }

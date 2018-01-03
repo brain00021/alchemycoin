@@ -1,61 +1,61 @@
-#fh5co-intro .section1-icon .fh5co-block {
+#alchemy-intro .section1-icon .alchemy-block {
   width: 25%;
   max-height: 300px; }
 
-#fh5co-invest .fh5co-block {
+#alchemy-invest .alchemy-block {
   width: 33.3%; }
 
-.fh5co-intro-icon.laptop-icon:before {
+.alchemy-intro-icon.laptop-icon:before {
   content: url("../../images/icon/laptop.png"); }
 
-.fh5co-intro-icon.low-icon:before {
+.alchemy-intro-icon.low-icon:before {
   content: url("../../images/icon/low.png"); }
 
-.fh5co-intro-icon.clock-icon:before {
+.alchemy-intro-icon.clock-icon:before {
   content: url("../../images/icon/clock.png"); }
 
-.fh5co-intro-icon.money_box-icon:before {
+.alchemy-intro-icon.money_box-icon:before {
   content: url("../../images/icon/money_box.png"); }
 
-.fh5co-intro-icon.invest-icon:before {
+.alchemy-intro-icon.invest-icon:before {
   content: url("../../images/icon/invest.png"); }
 
-#fh5co-work .table-responsive {
+#alchemy-work .table-responsive {
   border: none; }
 
-#fh5co-work table {
+#alchemy-work table {
   margin-top: 50px; }
-  #fh5co-work table td {
+  #alchemy-work table td {
     text-align: left;
     font-size: smaller; }
 
-#fh5co-work button {
+#alchemy-work button {
   margin-top: 30px; }
-  #fh5co-work button a {
+  #alchemy-work button a {
     text-decoration: none; }
 
-#fh5co-about .section-heading {
+#alchemy-about .section-heading {
   padding-bottom: 0; }
 
-#fh5co-join {
+#alchemy-join {
   overflow: hidden;
   position: relative;
   padding: 2em 0; }
-  #fh5co-join .section-heading {
+  #alchemy-join .section-heading {
     margin-bottom: 0; }
 
-#fh5co-contact {
+#alchemy-contact {
   background: transparent url("../../images/contact-bg.jpg") center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #3b3d40; }
-  #fh5co-contact h3 {
+  #alchemy-contact h3 {
     color: #000; }
-  #fh5co-contact ul.working-hours {
+  #alchemy-contact ul.working-hours {
     -webkit-padding-start: 0px; }
-    #fh5co-contact ul.working-hours li {
+    #alchemy-contact ul.working-hours li {
       list-style: none; }
-      #fh5co-contact ul.working-hours li.date {
+      #alchemy-contact ul.working-hours li.date {
         font-weight: bolder; }
 
 button a:focus,
@@ -63,32 +63,32 @@ button a:hover {
   text-decoration: none; }
 
 @media screen and (min-width: 1000px) {
-  #fh5co-about .carousel {
+  #alchemy-about .carousel {
     width: 1000px;
     margin: 0 auto; } }
 
 @media screen and (max-width: 700px) {
-  #fh5co-home, #fh5co-home .text-wrap {
+  #alchemy-home, #alchemy-home .text-wrap {
     height: 100vh; }
-  #fh5co-intro .section1-icon .fh5co-block {
+  #alchemy-intro .section1-icon .alchemy-block {
     width: 50%;
     min-height: 200px;
     font-size: 14px; }
-    #fh5co-intro .section1-icon .fh5co-block h2 {
+    #alchemy-intro .section1-icon .alchemy-block h2 {
       font-size: 18px; }
-  #fh5co-invest .fh5co-block {
+  #alchemy-invest .alchemy-block {
     width: 100%; } }
 
-#fh5co-invest {
+#alchemy-invest {
   margin-top: -50px; }
 
 @media screen and (max-width: 400px) {
-  #fh5co-intro .section1-icon .fh5co-block {
+  #alchemy-intro .section1-icon .alchemy-block {
     width: 100%;
     font-size: 12px; }
-    #fh5co-intro .section1-icon .fh5co-block h2 {
+    #alchemy-intro .section1-icon .alchemy-block h2 {
       font-size: 16px; }
-    #fh5co-intro .section1-icon .fh5co-block .fh5co-intro-icon {
+    #alchemy-intro .section1-icon .alchemy-block .alchemy-intro-icon {
       font-size: 36px; } }
 
 /*# sourceMappingURL=invest-style.css.map */
