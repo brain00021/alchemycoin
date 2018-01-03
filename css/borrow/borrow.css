@@ -2,6 +2,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+ul, li {
+  margin: 0;
+  padding: 0; }
+
 .navbar-brand {
   padding: 5px;
   width: 250px; }
@@ -58,7 +62,7 @@ a.alchemy-project-item {
   100% {
     background-position: 0%; } }
 
-#alchemy-home .gradient, #alchemy-container.borrow-wrapper .gradient {
+#alchemy-home.borrow-wrapper .gradient {
   opacity: 0.8; }
 
 .youtube-videos-content {
@@ -92,7 +96,14 @@ a.alchemy-project-item {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
   .footer-menu li {
-    display: inline-block; }
+    display: inline-block;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    @media screen and (max-width: 768px) {
+      .footer-menu li {
+        font-size: 14px;
+        margin-right: 2px; } }
 
 .footer-end {
   padding: 10px;
@@ -128,4 +139,58 @@ a.alchemy-project-item {
       width: 100%; }
 
 #alchemy-container {
-  min-height: 100vh; }
+  min-height: 100%;
+  padding: 120px 15px;
+  position: relative;
+  color: #fff; }
+  #alchemy-container .container {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    line-height: 40px;
+    font-size: 30px; }
+    @media screen and (max-width: 768px) {
+      #alchemy-container .container {
+        font-size: 15px;
+        line-height: 25px; } }
+  #alchemy-container .gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: .9;
+    -webkit-backface-visibility: hidden;
+    background-color: #329998;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzMjk5OTgiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzZjYzk5YyIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #329998), color-stop(1, #6cc99c));
+    /* Android 2.3 */
+    background-image: -webkit-linear-gradient(top left, #329998 0%, #6cc99c 100%);
+    /* IE10+ */
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#329998), to(#6cc99c));
+    background-image: -o-linear-gradient(top left, #329998 0%, #6cc99c 100%);
+    background-image: linear-gradient(to bottom right, #329998 0%, #6cc99c 100%);
+    background-image: -ms-linear-gradient(top left, #329998 0%, #6cc99c 100%); }
+
+#alchemy-home .text-inner a.youtube-player-icon {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: block;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 2px solid rgba(255, 255, 255, 0.3); }
+  #alchemy-home .text-inner a.youtube-player-icon i {
+    opacity: 0.3;
+    line-height: 140px;
+    font-size: 60px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  #alchemy-home .text-inner a.youtube-player-icon:hover, #alchemy-home .text-inner a.youtube-player-icon:active {
+    background: rgba(255, 255, 255, 0.6); }
+    #alchemy-home .text-inner a.youtube-player-icon:hover i, #alchemy-home .text-inner a.youtube-player-icon:active i {
+      font-size: 70px;
+      opacity: 1; }
