@@ -1,6 +1,8 @@
 #alchemy-intro .section1-icon .alchemy-block {
   width: 25%;
   height: 300px; }
+  #alchemy-intro .section1-icon .alchemy-block i.alchemy-intro-icon {
+    margin-bottom: 10px; }
 
 #alchemy-invest .alchemy-block {
   width: 33.3%; }
@@ -67,29 +69,45 @@ button a:hover {
     width: 1000px;
     margin: 0 auto; } }
 
-@media screen and (max-width: 700px) {
-  #alchemy-home, #alchemy-home .text-wrap {
+@media screen and (max-width: 640px) {
+  #alchemy-home,
+  #alchemy-home .text-wrap {
     height: 100vh; }
+  #alchemy-home {
+    padding-top: 55px; }
   #alchemy-intro .section1-icon .alchemy-block {
-    width: 50%;
+    padding: 20px;
+    height: 250px;
     font-size: 14px; }
     #alchemy-intro .section1-icon .alchemy-block h2 {
       font-size: 18px; }
+    #alchemy-intro .section1-icon .alchemy-block i.alchemy-intro-icon {
+      margin-bottom: 10px; }
   #alchemy-invest .alchemy-block {
     width: 100%; } }
 
 #alchemy-invest {
   margin-top: -50px; }
 
-@media screen and (max-width: 400px) {
-  #alchemy-intro .section1-icon .alchemy-block {
-    width: 100%;
-    font-size: 12px;
-    height: 200px; }
-    #alchemy-intro .section1-icon .alchemy-block h2 {
-      font-size: 16px; }
-    #alchemy-intro .section1-icon .alchemy-block .alchemy-intro-icon {
-      font-size: 24px;
-      margin-bottom: 10px; } }
+@media screen and (max-width: 500px) {
+  #alchemy-intro .section1-icon.block-padding {
+    padding-left: 10%;
+    padding-right: 10%; }
+    #alchemy-intro .section1-icon.block-padding .alchemy-block {
+      width: 50%;
+      font-size: 12px;
+      height: 200px; }
+      #alchemy-intro .section1-icon.block-padding .alchemy-block h2 {
+        font-size: 16px;
+        line-height: 1.2; }
+      #alchemy-intro .section1-icon.block-padding .alchemy-block .alchemy-intro-icon {
+        font-size: 24px;
+        margin-bottom: 10px; } }
+
+@media screen and (max-width: 450px) {
+  #alchemy-home {
+    padding-top: 80px; }
+  #alchemy-intro {
+    margin-top: -50px; } }
 
 /*# sourceMappingURL=invest-style.css.map */

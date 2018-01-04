@@ -446,7 +446,7 @@ h1, h2, h3, h4, h5, h6 {
     float: left;
     text-align: center;
     font-size: 16px;
-    min-height: 300px;
+    min-height: 200px;
     vertical-align: middle;
     padding: 40px;
     background: #fff;
@@ -461,7 +461,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-grow: 1;
     background-size: cover;
     position: relative;
-    backgroun-repeat: no-repeat; }
+    background-repeat: no-repeat; }
     @media screen and (max-width: 768px) {
       #alchemy-intro .alchemy-block, #alchemy-invest .alchemy-block {
         width: 100%; } }

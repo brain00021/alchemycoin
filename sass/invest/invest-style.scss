@@ -31,11 +31,14 @@ $form-group-margin-bottom: 30px !default;
     .alchemy-block {
         width: 25%;
         height: 300px;
+        i.alchemy-intro-icon {
+            margin-bottom: 10px;
+        }
     }
 }
 
-#alchemy-invest{
-    .alchemy-block{
+#alchemy-invest {
+    .alchemy-block {
         width: 33.3%;
     }
 }
@@ -98,7 +101,7 @@ $form-group-margin-bottom: 30px !default;
     background-repeat: no-repeat;
     background-size: cover;
     color: #3b3d40;
-    h3{
+    h3 {
         color: #000;
     }
     ul.working-hours {
@@ -118,53 +121,78 @@ button {
         text-decoration: none;
     }
 }
+
 @media screen and (min-width:1000px) {
     #alchemy-about {
-        .carousel{
+        .carousel {
             width: 1000px;
             margin: 0 auto;
         }
     }
 }
 
-@media screen and (max-width:700px) {
-    #alchemy-home, #alchemy-home .text-wrap{
+@media screen and (max-width:640px) {
+    #alchemy-home,
+    #alchemy-home .text-wrap {
         height: 100vh;
+    }
+    #alchemy-home {
+        padding-top: 55px;
     }
     #alchemy-intro {
         .section1-icon {
             .alchemy-block {
-                width: 50%;
+                // width: 50%;
+                padding: 20px;
+                height: 250px;
                 font-size: 14px;
                 h2 {
                     font-size: 18px;
                 }
+                i.alchemy-intro-icon {
+                    margin-bottom: 10px;
+                }
             }
         }
     }
-    #alchemy-invest{
-        .alchemy-block{
+    #alchemy-invest {
+        .alchemy-block {
             width: 100%;
         }
     }
 }
-#alchemy-invest{
+
+#alchemy-invest {
     margin-top: -50px;
 }
 
-@media screen and (max-width:400px) {
-    #alchemy-intro .section1-icon {
-        .alchemy-block {
-            width: 100%;
-            font-size: 12px;
-            height: 200px;
-            h2 {
-                font-size: 16px;
-            }
-            .alchemy-intro-icon {
-                font-size: 24px;
-                margin-bottom: 10px;
+@media screen and (max-width:500px) {
+    #alchemy-intro {
+        .section1-icon.block-padding {
+            padding-left: 10%;
+            padding-right: 10%;
+            .alchemy-block {
+                width: 50%;
+                font-size: 12px;
+                height: 200px;
+                h2 {
+                    font-size: 16px;
+                    line-height: 1.2;
+                }
+                .alchemy-intro-icon {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
             }
         }
+    }
+}
+
+@media screen and (max-width:450px) {
+    #alchemy-home {
+        padding-top: 80px;
+    }
+    #alchemy-intro {
+        margin-top: -50px;
     }
 }
