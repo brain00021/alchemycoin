@@ -112,9 +112,9 @@ a.alchemy-project-item {
 
 .footer-end {
   padding: 10px;
-  font-size: 13px;
+  font-size: 14px;
   background: #52d3aa;
-  color: rgba(255, 255, 255, 0.8); }
+  color: rgba(255, 255, 255, 0.9); }
 
 .howwork-wrapper {
   text-align: center;
@@ -212,3 +212,5 @@ a.alchemy-project-item {
 @media screen and (max-width: 768px) {
   #alchemy-intro, #alchemy-invest {
     margin-top: 0; } }
+
+/*# sourceMappingURL=borrow.css.map */

@@ -89,6 +89,10 @@ button a:hover {
 #alchemy-invest {
   margin-top: -50px; }
 
+.footer-end p {
+  word-wrap: break-word;
+  margin-bottom: 1em; }
+
 @media screen and (max-width: 500px) {
   #alchemy-intro .section1-icon.block-padding {
     padding-left: 10%;
