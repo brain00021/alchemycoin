@@ -29,8 +29,11 @@ $form-group-margin-bottom: 30px !default;
 
 #alchemy-intro .section1-icon {
     .alchemy-block {
-        width: 25%;
-        height: 300px;
+        width: 20%;
+        height: 250px;
+        h2 {
+            line-height: 1.2;
+        }
         i.alchemy-intro-icon {
             margin-bottom: 10px;
         }
@@ -122,11 +125,30 @@ button {
     }
 }
 
+.footer-end p {
+    word-wrap: break-word;
+    margin-bottom: 1em;
+}
+
 @media screen and (min-width:1000px) {
     #alchemy-about {
         .carousel {
             width: 1000px;
             margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width:769px) {
+    #alchemy-intro {
+        .section1-icon {
+            .alchemy-block {
+                max-height: 220px;
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
 }
@@ -140,54 +162,55 @@ button {
         padding-top: 55px;
     }
     #alchemy-intro {
-        .section1-icon {
+        .section1-icon.block-padding {
+            padding-left: 10%;
+            padding-right: 10%;
             .alchemy-block {
-                // width: 50%;
-                padding: 20px;
-                height: 250px;
-                font-size: 14px;
+                width: 50%;
+                padding: 30px;
+                max-height: 200px;
                 h2 {
                     font-size: 18px;
                 }
                 i.alchemy-intro-icon {
                     margin-bottom: 10px;
                 }
+                &:last-Child {
+                    width: 50%;
+                    margin: 0 25%;
+                }
             }
         }
     }
     #alchemy-invest {
         .alchemy-block {
-            width: 100%;
+            width: 50%;
+            max-height: 300px;
+            .alchemy-text .alchemy-intro-icon{
+                margin-bottom: 10px;
+            }
+            &:last-Child{
+                margin: 0 25%;
+            }
         }
     }
-}
-
-#alchemy-invest {
-    margin-top: -50px;
-}
-
-.footer-end p{
-    word-wrap: break-word;
-    margin-bottom: 1em;
+    #alchemy-invest {
+        margin-top: -50px;
+    }
 }
 
 @media screen and (max-width:500px) {
     #alchemy-intro {
-        .section1-icon.block-padding {
-            padding-left: 10%;
-            padding-right: 10%;
-            .alchemy-block {
-                width: 50%;
-                font-size: 12px;
-                height: 200px;
-                h2 {
-                    font-size: 16px;
-                    line-height: 1.2;
-                }
-                .alchemy-intro-icon {
-                    font-size: 24px;
-                    margin-bottom: 10px;
-                }
+        .alchemy-block {
+            width: 50%;
+            height: 180px;
+            h2 {
+                font-size: 14px;
+                line-height: 1;
+            }
+            .alchemy-intro-icon {
+                font-size: 24px;
+                margin-bottom: 10px;
             }
         }
     }
@@ -198,6 +221,10 @@ button {
         padding-top: 80px;
     }
     #alchemy-intro {
-        margin-top: -50px;
+        margin-top: 0px;
+        .section1-icon.block-padding .alchemy-block:last-Child {
+            width: 60%;
+            margin: 0 20%;
+        }
     }
 }

@@ -44,7 +44,7 @@ a.alchemy-project-item {
     height: 200px; }
 
 .applynow-button-style {
-  color: white; }
+  list-style: none; }
 
 @-webkit-keyframes focus-button-style {
   0% {
@@ -204,7 +204,7 @@ a.alchemy-project-item {
 
 .section-heading {
   padding-bottom: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 30px; }
 
 .social {
   margin-bottom: 10px; }
