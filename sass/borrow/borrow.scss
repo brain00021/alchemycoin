@@ -40,7 +40,9 @@
     //  color:white;
     list-style: none;
  }
-
+ul.nav li,ul.nav li a{
+    display: block;
+}
 @keyframes focus-button-style{
     0%{
        background-position: 0;

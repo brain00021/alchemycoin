@@ -73,10 +73,10 @@
 		    	navbar.removeClass('in');
 		    	navbar.attr('aria-expanded', 'false');
 		    	$('.js-alchemy-nav-toggle').removeClass('active');
-		    }
-
-		    event.preventDefault();
-		    return false;
+			}
+			//關掉a屬性
+		    // event.preventDefault();
+		    // return false;
 		});
 
 
