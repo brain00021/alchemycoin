@@ -7,7 +7,8 @@
     margin-bottom: 10px; }
 
 #alchemy-invest .alchemy-block {
-  width: 33.3%; }
+  width: 32.3%;
+  margin-left: 0.5%; }
 
 .alchemy-intro-icon.laptop-icon:before {
   content: url("../../images/icon/laptop.png"); }
