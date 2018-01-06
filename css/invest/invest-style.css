@@ -103,12 +103,11 @@ button a:hover {
         width: 50%;
         margin: 0 25%; }
   #alchemy-invest .alchemy-block {
-    width: 50%;
-    max-height: 300px; }
+    width: 100%;
+    max-height: 300px;
+    margin: 10px auto; }
     #alchemy-invest .alchemy-block .alchemy-text .alchemy-intro-icon {
       margin-bottom: 10px; }
-    #alchemy-invest .alchemy-block:last-Child {
-      margin: 0 25%; }
   #alchemy-invest {
     margin-top: -50px; } }
 
@@ -131,5 +130,3 @@ button a:hover {
     #alchemy-intro .section1-icon.block-padding .alchemy-block:last-Child {
       width: 60%;
       margin: 0 20%; } }
-
-/*# sourceMappingURL=invest-style.css.map */

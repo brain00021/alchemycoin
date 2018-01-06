@@ -184,13 +184,15 @@ button {
     }
     #alchemy-invest {
         .alchemy-block {
-            width: 50%;
+            width:100%;
             max-height: 300px;
+            margin:10px auto;
+           
             .alchemy-text .alchemy-intro-icon{
                 margin-bottom: 10px;
             }
             &:last-Child{
-                margin: 0 25%;
+               
             }
         }
     }
