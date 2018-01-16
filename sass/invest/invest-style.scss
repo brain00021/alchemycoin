@@ -43,7 +43,7 @@ $form-group-margin-bottom: 30px !default;
 #alchemy-invest {
     .alchemy-block {
         width: 32.3%;
-        margin-left:0.5%;
+        margin-left: 0.5%;
     }
 }
 
@@ -184,21 +184,16 @@ button {
         }
     }
     #alchemy-invest {
+        margin-top: -50px;
         .alchemy-block {
-            width:100%;
-            max-height:280px;
-            margin:5px auto;
-           
-            .alchemy-text .alchemy-intro-icon{
+            width: 100%;
+            max-height: 280px;
+            margin: 5px auto;
+
+            .alchemy-text .alchemy-intro-icon {
                 margin-bottom: 10px;
             }
-            &:last-Child{
-               
-            }
         }
-    }
-    #alchemy-invest {
-        margin-top: -50px;
     }
 }
 
