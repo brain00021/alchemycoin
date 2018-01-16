@@ -1,0 +1,28 @@
+{
+  "name": "Finance1221",
+  "version": "1.0.0",
+  "description": "外包案件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass sass/ --output css --source-map-embed --source-map-contents | postcss --use autoprefixer css -d css",
+    "watch:sass": "npm run sass -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brain00021/Finance1221.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brain00021/Finance1221/issues"
+  },
+  "homepage": "https://github.com/brain00021/Finance1221#readme",
+  "dependencies": {
+    "autoprefixer": "^7.2.4",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^4.1.1",
+    "source-map": "^0.6.1"
+  }
+}
