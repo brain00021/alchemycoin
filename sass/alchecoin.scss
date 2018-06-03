@@ -1,0 +1,104 @@
+@import "oldAlchecoin.scss";
+.index-wrapper{
+  overflow: hidden;
+  padding-top:80px;
+}
+// selection1
+.section-header{
+  h6{
+    margin-bottom:10px;
+  }
+  h4{
+    color:#797979;
+  }
+}
+.section-body{
+  th span{
+    font-size:1.0rem;
+  }
+  th p{
+    color: #301570;
+    margin:0;
+  }
+  thead tr th{
+    
+  }
+
+}
+.heading{
+  display: block;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  color: #301570;
+  padding: 0;
+  margin: 0;
+}
+// SPOINSER
+
+.sponser-wrapper{
+  overflow: hidden;
+  ul{
+    display:block;
+    position: relative;
+    padding:15px;
+    .slick-prev{
+      left:15px;
+      font-family: 'Glyphicons Halflings';
+      &::before{
+          color:#301570;
+      }
+    }
+    .slick-next {
+      right:15px;
+      font-family: 'Glyphicons Halflings';
+      &::before{
+          // width: 0;
+          // height: 0;
+          // border-style: solid;
+          // border-width: 25px 0 25px 25px;
+          // border-color: transparent transparent transparent #301570;
+          color:#301570;
+      }
+    }
+  }
+  li{
+    width:180px;
+    display: inline-block;
+    img{max-width:180px;}
+  }
+}
+
+.icon-status {
+  background-color:gray;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  line-height: 25px;
+  color:#fff;
+  width:25px;
+  height:25px;
+  border-radius: 50%;
+}
+.icon-status-check{
+   background-color:#301570;
+}
+.gradation{
+  position: relative;
+  width:62px;
+  margin:auto;
+  text-align: center;
+}
+.gradation__item{
+    width: 13px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #dadfea;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.gradation__item--active{
+  background-color:#d219e1;
+}
