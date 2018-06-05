@@ -102,3 +102,55 @@
 .gradation__item--active{
   background-color:#d219e1;
 }
+
+#alchemy-intro{
+  margin-top:0px;
+  padding-bottom: 0px;
+  .section-heading{
+    margin-bottom: 0px;
+  }
+  .section1-icon .alchemy-block{
+    width:100%;
+    margin: 0.5%;
+    padding:10px;
+    display: inline-block;
+    height:auto;
+    &:first-child{
+      margin-left: 0%;
+    }
+    h2{
+      margin:0;
+    }
+  }
+}
+
+.btn--violet{
+  background-color:rgba(#d219e1,.5);
+  color:#fff;
+  margin:15px auto;
+  vertical-align: middle;
+  i{
+    line-height:15px;
+    vertical-align: top;
+    margin-right:15px;
+  }
+  span{
+    padding:0;
+    margin:0;
+  }
+}
+
+// process的圖片檔
+.process__middle{
+  g#_3_line circle{
+    animation: rote1 10s infinite ease;
+    transform-origin: 0 0 0;
+  }
+}
+
+@keyframes rote1{
+  0%{transform: rotate(360deg);}
+  100%{
+    transform: rotate(0deg);
+  }
+}

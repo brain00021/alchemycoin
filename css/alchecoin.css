@@ -218,7 +218,7 @@ ul.nav li, ul.nav li a {
 
 #alchemy-intro .section1-icon .alchemy-block {
   width: 20%;
-  height: 250px; }
+  height: auto; }
   #alchemy-intro .section1-icon .alchemy-block h2 {
     line-height: 1.2; }
   #alchemy-intro .section1-icon .alchemy-block i.alchemy-intro-icon {
@@ -312,8 +312,7 @@ button a:hover {
     padding-right: 10%; }
     #alchemy-intro .section1-icon.block-padding .alchemy-block {
       width: 50%;
-      padding: 30px;
-      max-height: 200px; }
+      padding: 30px; }
       #alchemy-intro .section1-icon.block-padding .alchemy-block h2 {
         font-size: 18px; }
       #alchemy-intro .section1-icon.block-padding .alchemy-block i.alchemy-intro-icon {
@@ -332,8 +331,7 @@ button a:hover {
 
 @media screen and (max-width: 500px) {
   #alchemy-intro .alchemy-block {
-    width: 50%;
-    height: 180px; }
+    width: 50%; }
     #alchemy-intro .alchemy-block h2 {
       font-size: 14px;
       line-height: 1; }
@@ -429,3 +427,55 @@ button a:hover {
 
 .gradation__item--active {
   background-color: #d219e1; }
+
+#alchemy-intro {
+  margin-top: 0px;
+  padding-bottom: 0px; }
+  #alchemy-intro .section-heading {
+    margin-bottom: 0px; }
+  #alchemy-intro .section1-icon .alchemy-block {
+    width: 100%;
+    margin: 0.5%;
+    padding: 10px;
+    display: inline-block;
+    height: auto; }
+    #alchemy-intro .section1-icon .alchemy-block:first-child {
+      margin-left: 0%; }
+    #alchemy-intro .section1-icon .alchemy-block h2 {
+      margin: 0; }
+
+.btn--violet {
+  background-color: rgba(210, 25, 225, 0.5);
+  color: #fff;
+  margin: 15px auto;
+  vertical-align: middle; }
+  .btn--violet i {
+    line-height: 15px;
+    vertical-align: top;
+    margin-right: 15px; }
+  .btn--violet span {
+    padding: 0;
+    margin: 0; }
+
+.process__middle g#_3_line circle {
+  -webkit-animation: rote1 10s infinite ease;
+  animation: rote1 10s infinite ease;
+  -webkit-transform-origin: 0 0 0;
+  -ms-transform-origin: 0 0 0;
+  transform-origin: 0 0 0; }
+
+@-webkit-keyframes rote1 {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@keyframes rote1 {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }

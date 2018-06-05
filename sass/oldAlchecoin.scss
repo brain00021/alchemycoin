@@ -247,7 +247,7 @@ $form-group-margin-bottom: 30px !default;
 #alchemy-intro .section1-icon {
     .alchemy-block {
         width: 20%;
-        height: 250px;
+        height: auto;
         h2 {
             line-height: 1.2;
         }
@@ -386,7 +386,6 @@ button {
             .alchemy-block {
                 width: 50%;
                 padding: 30px;
-                max-height: 200px;
                 h2 {
                     font-size: 18px;
                 }
@@ -418,7 +417,6 @@ button {
     #alchemy-intro {
         .alchemy-block {
             width: 50%;
-            height: 180px;
             h2 {
                 font-size: 14px;
                 line-height: 1;
