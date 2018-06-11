@@ -29,6 +29,8 @@ html.no-js
     // Place favicon.ico and apple-touch-icon.png in the root directory
     link(rel='shortcut icon', href='favicon.ico')
     link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700', rel='stylesheet', type='text/css')
+    // flipclock.css
+    link(rel='stylesheet', href='/css/flipclock.css')
     // Animate.css
     link(rel='stylesheet', href='/css/animate.css')
     // Icomoon Icon Fonts
@@ -44,11 +46,7 @@ html.no-js
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     link(rel='stylesheet', href='/css/style.css')
     link(href="/js/slick/slick-theme.css", rel="stylesheet")
-    link(href="/js/slick/slick-theme.css", rel="stylesheet")
-    
     link(href="/css/alchecoin.css", rel="stylesheet")
-    
-    style.
     // Modernizr JS
     script(src='/js/modernizr-2.6.2.min.js')
     // FOR IE9 below
@@ -57,6 +55,7 @@ html.no-js
   body
     block header
     .index-wrapper
+      block countdown
       block section1
       block section2
       block container
@@ -75,6 +74,8 @@ html.no-js
     script(src='/js/jquery.stellar.min.js')
     // Counter
     script(src='/js/jquery.countTo.js')
+    // flipclock
+    script(src='/js/flipclock.min.js')
     // Magnific Popup
     script(src='/js/jquery.magnific-popup.min.js')
     script(src='/js/magnific-popup-options.js')
