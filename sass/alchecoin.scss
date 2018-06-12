@@ -1,8 +1,23 @@
 @import "oldAlchecoin.scss";
 @import "countdown.scss";
+@import "animatebg.scss";
+// common
 .index-wrapper{
   overflow: hidden;
   padding-top:80px;
+  position: relative;
+  z-index: 12;
+  max-width: 1400px;
+  margin:auto;
+}
+.card-bg{
+  background:#fff;
+  box-shadow: 0 0 8px rgba(#000,0.5);
+  border-radius: 25px;
+  position: relative;
+  z-index: 30;
+  margin:15px auto;
+  padding:15px;
 }
 // selection1
 .section-header{
@@ -111,7 +126,7 @@
     margin-bottom: 0px;
   }
   .section1-icon .alchemy-block{
-    width:100%;
+    width:49%;
     margin: 0.5%;
     padding:10px;
     display: inline-block;
