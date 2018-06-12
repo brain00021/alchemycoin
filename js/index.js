@@ -6,3 +6,6 @@ $(document).ready(function() {
   });
 });
 
+var clock = $('.timer').FlipClock(3600, {
+		countdown: true
+	});
