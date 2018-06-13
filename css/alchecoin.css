@@ -349,18 +349,12 @@ button a:hover {
       margin: 0 20%; } }
 
 .base_block {
-  max-width: 990px;
   background-color: #40acff;
   background-image: -webkit-radial-gradient(30% 50px, farthest-side, #379bf4 0, #6e1dbf 1200px);
   background-image: -o-radial-gradient(30% 50px, farthest-side, #379bf4 0, #6e1dbf 1200px);
   background-image: radial-gradient(farthest-side at 30% 50px, #379bf4 0, #6e1dbf 1200px);
   border: 1px solid #3d86eb;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  border-radius: 8px; }
   .base_block .left_block {
     padding: 50px 25px; }
   .base_block .video_box {
@@ -382,6 +376,10 @@ button a:hover {
   .base_block h3 {
     color: #fff; }
 
+.timer {
+  width: 300px;
+  margin: 0 auto; }
+
 .flip-clock-wrapper .flip {
   -webkit-box-shadow: unset;
   box-shadow: unset;
@@ -393,6 +391,12 @@ button a:hover {
     font-size: 45px;
     text-shadow: unset; }
 
+.flip-clock-wrapper .flip:nth-child(5) li a div div.inn, .flip-clock-wrapper .flip:nth-child(6) li a div div.inn {
+  background: #6373d8; }
+
+.flip-clock-wrapper .flip:nth-child(8) li a div div.inn, .flip-clock-wrapper .flip:nth-child(9) li a div div.inn {
+  background: #5768d5; }
+
 .flip-clock-divider {
   width: 10px; }
   .flip-clock-divider .flip-clock-label {
@@ -401,16 +405,43 @@ button a:hover {
 .flip-clock-dot {
   opacity: 0; }
 
+.progress_warp {
+  margin: 10px 0; }
+
+span[class^="f_"] {
+  color: #fff;
+  font-size: small;
+  display: inline-block;
+  position: relative;
+  width: 100px; }
+
+span.f_left {
+  left: -30%; }
+
+span.f_right {
+  left: 30%; }
+
+.progress_warp {
+  margin-bottom: 30px; }
+
 .progress_bg {
-  background: rgba(81, 0, 101, 0.1);
-  padding: 15px 10px;
-  margin: 10px auto;
-  border-radius: 5px; }
+  background: rgba(71, 58, 159, 0.5);
+  padding: 8px 10px;
+  margin: 0 auto;
+  border-radius: 8px; }
   .progress_bg .progress {
     margin-bottom: 0;
-    background: transparent; }
+    background: transparent;
+    -webkit-box-shadow: unset;
+    box-shadow: unset; }
     .progress_bg .progress .progress-bar {
-      background-color: #fff; }
+      background-color: #fff;
+      border-radius: 4px;
+      text-align: right; }
+      .progress_bg .progress .progress-bar span {
+        color: #6b7ada;
+        font-size: large;
+        font-weight: bold; }
 
 button.coinBtn {
   border: 1px solid #fff;
@@ -419,10 +450,12 @@ button.coinBtn {
   -webkit-transition: background-color .15s, border-color .15s;
   -o-transition: background-color .15s, border-color .15s;
   transition: background-color .15s, border-color .15s;
-  padding: 0 10px;
+  padding: 5px 10px;
   line-height: 50px;
   border-radius: 8px;
-  width: 100%; }
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 20px; }
   button.coinBtn:hover {
     background-color: #e8eef6;
     border-color: #d9e3f1; }
@@ -433,10 +466,12 @@ button.coinBtn {
     -webkit-transition: background-color .15s, border-color .15s;
     -o-transition: background-color .15s, border-color .15s;
     transition: background-color .15s, border-color .15s;
-    padding: 0 10px;
+    padding: 5px 10px;
     line-height: 50px;
     border-radius: 8px;
+    font-weight: 500;
     width: 100%;
+    margin-bottom: 20px;
     margin-top: 20px; }
     button.coinBtn.reverseBtn:hover {
       background-color: rgba(255, 255, 255, 0.3);
@@ -454,7 +489,6 @@ canvas {
   pointer-events: auto;
   top: 0;
   background: #1b1f47 url("../images/bg.jpg") no-repeat top center; }
-
 
 .index-wrapper {
   overflow: hidden;

@@ -1,15 +1,17 @@
     .base_block {
-    max-width: 990px;
+    // width: 100%;
     background-color: #40acff;
     background-image: radial-gradient(farthest-side at 30% 50px, #379bf4 0, #6e1dbf 1200px);
     border: 1px solid #3d86eb;
     border-radius: 8px;
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
     .left_block {
         padding: 50px 25px;
     }
     .video_box {
+    	width: 90%
+    	margin:0 auto;
         position: relative;
         height: 0;
         overflow: hidden;
@@ -32,6 +34,11 @@
         color: #fff;
     }
 }
+.timer{
+	width: 300px;
+  margin: 0 auto;
+
+}
 
 .flip-clock-wrapper {
     .flip {
@@ -45,6 +52,12 @@
             text-shadow:unset;
         }
     }
+    .flip:nth-child(5) li a div div.inn,.flip:nth-child(6) li a div div.inn{
+background: darken(#6b7ada,2%);
+    }
+        .flip:nth-child(8) li a div div.inn,.flip:nth-child(9) li a div div.inn{
+background: darken(#6b7ada,5%);
+    }
 }
 
 .flip-clock-divider {
@@ -57,17 +70,45 @@
 .flip-clock-dot {
     opacity: 0;
 }
-
+.progress_warp{
+	margin: 10px 0;
+}
+span[class^="f_"]{
+	color:#fff;
+	font-size: small;
+	display: inline-block;
+	position: relative;
+	width: 100px
+}
+span.f_left{
+	left: -30%;
+}
+span.f_right{
+	left:30%;
+}
+.progress_warp{
+	margin-bottom: 30px
+}
 .progress_bg {
-    background: rgba(81, 0, 101, .1);
-    padding: 15px 10px;
-    margin: 10px auto;
-    border-radius: 5px;
+    background: rgba(71,58,159,.5);;
+    padding: 8px 10px;
+    margin: 0 auto;
+    border-radius: 8px;
     .progress {
         margin-bottom: 0;
         background: transparent;
+        box-shadow: unset;
+
         .progress-bar {
             background-color: #fff;
+            border-radius: 4px;
+            text-align: right;;
+            span{
+            	color: #6b7ada;
+            	font-size: large;
+            	font-weight: bold;
+
+            }
         }
     }
    }
@@ -77,10 +118,12 @@
         color: $color;
         background-color: $bg_color;
         transition: background-color .15s, border-color .15s;
-        padding: 0 10px;
+        padding: 5px 10px;
         line-height: 50px;
         border-radius: 8px;
+        font-weight: 500;
         width: 100%;
+        margin-bottom: 20px;
         &:hover {
             background-color: $hover_bg;
             border-color: $hover_border;
