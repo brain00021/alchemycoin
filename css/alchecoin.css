@@ -8,7 +8,7 @@ ul, li {
 
 .navbar-brand {
   padding: 5px;
-  width: 250px; }
+  width: 60px; }
   .navbar-brand img {
     width: 100%; }
 
@@ -94,24 +94,6 @@ ul.nav li, ul.nav li a {
 
 .social-circle {
   margin-top: 10px; }
-
-.footer-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: 15px auto;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-  .footer-menu li {
-    display: inline-block;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-    @media screen and (max-width: 768px) {
-      .footer-menu li {
-        font-size: 14px;
-        margin-right: 2px; } }
 
 .footer-end {
   padding: 10px;
@@ -286,8 +268,7 @@ button a:hover {
   text-decoration: none; }
 
 .footer-end p {
-  word-wrap: break-word;
-  margin-bottom: 1em; }
+  word-wrap: break-word; }
 
 @media screen and (min-width: 1000px) {
   #alchemy-about .carousel {
@@ -442,6 +423,20 @@ button.coinBtn {
       background-color: rgba(255, 255, 255, 0.3);
       border-color: #d9e3f1; }
 
+body {
+  background-color: #1b1f47;
+  background: #1b1f47 url("../images/bg2.jpg") no-repeat bottom center; }
+
+.animatebg {
+  position: absolute;
+  overflow: hidden;
+  max-height: 900px;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+
 canvas {
   display: block;
   vertical-align: bottom; }
@@ -455,13 +450,64 @@ canvas {
   top: 0;
   background: #1b1f47 url("../images/bg.jpg") no-repeat top center; }
 
+ul {
+  -webkit-padding-start: 0px; }
+
+#footer {
+  padding: 10px 0;
+  background: #060115; }
+
+.footer-menu-wrapper {
+  vertical-align: middle; }
+  .footer-menu-wrapper .footer-menu {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin: 15px auto;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .footer-menu-wrapper .footer-menu li {
+      padding: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis; }
+      .footer-menu-wrapper .footer-menu li:hover {
+        background: #329998;
+        color: white; }
+        .footer-menu-wrapper .footer-menu li:hover a {
+          color: white;
+          text-decoration: none; }
+    @media screen and (max-width: 768px) {
+      .footer-menu-wrapper .footer-menu {
+        display: block; }
+        .footer-menu-wrapper .footer-menu li {
+          display: inline-block;
+          width: 23%;
+          padding: 0.25%;
+          margin: 5px 0.25%;
+          text-align: center;
+          border: 1px solid #329998; } }
+
+.social-nav {
+  display: block; }
+  .social-nav ul.social {
+    text-align: right;
+    width: 60%; }
+    .social-nav ul.social li {
+      text-align: center; }
+  @media screen and (max-width: 768px) {
+    .social-nav ul.social {
+      text-align: center; } }
 
 .index-wrapper {
   overflow: hidden;
   padding-top: 80px;
   position: relative;
   z-index: 12;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: auto; }
 
 .card-bg {
@@ -567,9 +613,10 @@ canvas {
       margin: 0; }
 
 .btn--violet {
-  background-color: rgba(210, 25, 225, 0.5);
-  color: #fff;
+  background-color: #fff;
+  color: #4cd0a5;
   margin: 15px auto;
+  border: 1px solid #4cd0a5;
   vertical-align: middle; }
   .btn--violet i {
     line-height: 15px;
@@ -601,5 +648,3 @@ canvas {
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); } }
-
-/*# sourceMappingURL=alchecoin.css.map */

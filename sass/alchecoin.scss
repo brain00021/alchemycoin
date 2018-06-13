@@ -1,13 +1,72 @@
 @import "oldAlchecoin.scss";
 @import "countdown.scss";
 @import "animatebg.scss";
+$green:#329998;
+// footer started
+ul{-webkit-padding-start: 0px;}
+#footer{
+  padding:10px 0;
+  background:#060115;
+}
+.footer-menu-wrapper{
+  vertical-align: middle;
+  .footer-menu{
+    text-align: left;
+    display: flex;
+    text-align: center;
+    margin:15px auto;
+    justify-content: space-around;
+    li{
+      padding:5px;
+      border-radius: 5px;
+      display: inline-block;
+      text-overflow: ellipsis;
+      &:hover{
+        background:$green;
+        color:white;
+        a{
+          color:white;
+          text-decoration: none;
+        }
+      }
+    }
+    @media screen and (max-width:768px){
+      display: block;
+      li{
+        display: inline-block;
+        width:23%;
+        padding:0.25%;
+        margin:5px 0.25%;
+        text-align: center;
+        border:1px solid $green;
+      }
+    }
+  } 
+}
+
+.social-nav{
+  display:block;
+  ul.social{
+   text-align: right;
+   width:60%;
+   li{
+     text-align: center;
+   }
+  }
+  @media screen and (max-width:768px){
+    ul.social{
+      text-align: center;
+    }
+  }
+}
+// footer finished
 // common
 .index-wrapper{
   overflow: hidden;
   padding-top:80px;
   position: relative;
   z-index: 12;
-  max-width: 1400px;
+  max-width: 1300px;
   margin:auto;
 }
 .card-bg{
@@ -141,9 +200,10 @@
 }
 
 .btn--violet{
-  background-color:rgba(#d219e1,.5);
-  color:#fff;
+  background-color:#fff;
+  color:#4cd0a5;
   margin:15px auto;
+  border:1px solid #4cd0a5;
   vertical-align: middle;
   i{
     line-height:15px;

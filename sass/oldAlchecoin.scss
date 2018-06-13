@@ -5,8 +5,8 @@
  }
 .navbar-brand{
     padding:5px;
-    width:250px;
-    img{width:100%}
+    width:60px;
+    img{width:100%;}
 }
 .focus-button-style{
     color:white;
@@ -89,20 +89,7 @@ ul.nav li,ul.nav li a{
  .social-circle{
      margin-top:10px;
  }
- .footer-menu {
-     display: flex;
-     text-align: center;
-     margin:15px auto;
-     justify-content: space-around;
-    li{ display: inline-block;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        @media screen and (max-width: 768px) {
-            font-size: 14px;
-            margin-right: 2px;
-        }
-    }
- }
+
 
  .footer-end{
     padding:10px;
@@ -345,7 +332,6 @@ button {
 
 .footer-end p {
     word-wrap: break-word;
-    margin-bottom: 1em;
 }
 
 @media screen and (min-width:1000px) {

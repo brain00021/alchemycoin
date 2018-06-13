@@ -6,21 +6,33 @@ block header
                 .navbar-header
                     // Mobile Toggle Menu Button
                     a.js-alchemy-nav-toggle.alchemy-nav-toggle(href='#', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-                        i
+                      i
                     a.navbar-brand(href='./borrow.html')
-                        img(src='/images/logo2.png')
+                      img(src='/images/logo.png')
                 #navbar.navbar-collapse.collapse
                     ul.nav.navbar-nav.navbar-right
                         li
-                            a(href='./borrow.html')
-                                span Borrow
+                          a(href='#',data-nav-section="home")
+                            span About
                         li
-                            a(href='./invest.html')
-                                span Invest
+                          a(href='#',data-nav-section="why")
+                            span Why Choose Us
                         li
-                            a(href='#')
-                                span Login
-                        li.active.register_btn.register_btn_style
-                            a(href='#')
-                                span Register
+                          a(href='#',data-nav-section="process")
+                            span Process
+                        li
+                          a(href='#',data-nav-section="roadmap")
+                            span Roadmap
+                        li
+                          a(href='#',data-nav-section="login")
+                            span Login
+                        li
+                          a(href='#',data-nav-section="Join")
+                            span Join WhiteList
+                        li
+                          a(href='#')
+                            span en
+                        //- li.active.register_btn.register_btn_style
+                        //-     a(href='#')
+                        //-         span Register
             // </div>
