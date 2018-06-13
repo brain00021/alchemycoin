@@ -59,14 +59,17 @@
         <!-- <div class="row">-->
         <nav class="navbar navbar-default">
           <div class="navbar-header">
-            <!-- Mobile Toggle Menu Button--><a class="js-alchemy-nav-toggle alchemy-nav-toggle" href="#" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a><a class="navbar-brand" href="./borrow.html"><img src="/images/logo2.png"></a>
+            <!-- Mobile Toggle Menu Button--><a class="js-alchemy-nav-toggle alchemy-nav-toggle" href="#" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a><a class="navbar-brand" href="./borrow.html"><img src="/images/logo.png"></a>
           </div>
           <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="./borrow.html"><span>Borrow</span></a></li>
-              <li><a href="./invest.html"><span>Invest</span></a></li>
-              <li><a href="#"><span>Login</span></a></li>
-              <li class="active register_btn register_btn_style"><a href="#"><span>Register</span></a></li>
+              <li><a href="#" data-nav-section="home"><span>About</span></a></li>
+              <li><a href="#" data-nav-section="why"><span>Why Choose Us</span></a></li>
+              <li><a href="#" data-nav-section="process"><span>Process</span></a></li>
+              <li><a href="#" data-nav-section="roadmap"><span>Roadmap</span></a></li>
+              <li><a href="#" data-nav-section="login"><span>Login</span></a></li>
+              <li><a href="#" data-nav-section="Join"><span>Join WhiteList</span></a></li>
+              <li><a href="#"><span>en</span></a></li>
             </ul>
           </div>
         </nav>
@@ -74,31 +77,23 @@
       </div>
     </header>
     <div class="index-wrapper">
-      <div class="container">
-        <div class="base_block">
-          <div class="row">
-            <div class="col-sm-7 col-xs-12">
-              <div class="left_block">
-                <div class="video_box">
-                  <iframe src="https://www.youtube.com/embed/9NJYznYiLfI" allow="autoplay; encrypted-media" allowfulscreen frameBorder="0"></iframe>
-                </div>
+      <div class="container" data-section="home">
+        <div class="row base_block">
+          <div class="left_block col-sm-7 col-xs-12">
+            <div class="video_box">
+              <iframe src="https://www.youtube.com/embed/9NJYznYiLfI" allow="autoplay; encrypted-media" allowfulscreen></iframe>
+            </div>
+          </div>
+          <div class="right_block col-sm-5 col-xs-12">
+            <h3>22% bonus finishes in:</h3>
+            <div class="timer"></div>
+            <div class="progress_bg">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="min-width:58%"><span>58</span></div>
               </div>
             </div>
-            <div class="col-sm-5 col-xs-12">
-              <div class="right_block">
-                <h3>22% bonus finishes in:</h3>
-                <div class="timer"></div>
-                <div class="progress_warp"><span class="f_left">Raised</span><span class="f_right">Next goal</span>
-                  <div class="progress_bg">
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="min-width:58%"><span>58</span><span>%</span></div>
-                    </div>
-                  </div><span class="f_left">$5,807,401</span><span class="f_right">$10,000,000</span>
-                </div>
-                <button class="coinBtn"><span>BUT COINS NOW</span></button>
-                <button class="coinBtn reverseBtn"><span>READ WHITEPAPER</span></button>
-              </div>
-            </div>
+            <button class="coinBtn"><span>BUT COINS NOW</span></button>
+            <button class="coinBtn reverseBtn"><span>READ WHITEPAPER</span></button>
           </div>
         </div>
       </div>
@@ -254,34 +249,34 @@
         </div>
       </div>
     </div>
-    <!-- particles.js container-->
-    <div id="particles-js"></div>
-    <!-- stats - count particles-->
-    <div class="count-particles"></div>
-    <footer id="footer" role="contentinfo"><a class="gotop js-gotop" href="#"><i class="icon-arrow-up2"></i></a>
+    <div class="animatebg">
+      <!-- particles.js container-->
+      <div id="particles-js"></div>
+      <!-- stats - count particles-->
+      <div class="count-particles"></div>
+    </div>
+    <footer id="footer" role="contentinfo">
       <div class="container">
-        <div class="col-md-12 text-center"></div>
-        <div class="col-md-12">
+        <div class="col-sm-12 col-md-4 col-md-push-8 text-center social-nav">
+          <ul class="social social-circle">
+            <li><a href="https://twitter.com/alchemy-_Finance"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/watch?v=9NJYznYiLfI"><i class="icon-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-8 col-md-pull-4 footer-menu-wrapper">
           <ul class="footer-menu">
-            <li><a>Prviacy Policy</a></li>
-            <li><a>Term of Uses</a></li>
-            <li><a>Blog </a></li>
-            <li><a>About Us</a></li>
-            <li><a>FAQ     </a></li>
+            <li><a href="#" data-nav-section="home"><span>About</span></a></li>
+            <li><a href="#" data-nav-section="why"><span>Why Us</span></a></li>
+            <li><a href="#" data-nav-section="process"><span>Process</span></a></li>
+            <li><a href="#" data-nav-section="roadmap"><span>Roadmap</span></a></li>
+            <li><a href="#" data-nav-section="login"><span>Login</span></a></li>
+            <li><a href="#" data-nav-section="Join"><span>Join </span></a></li>
+            <li><a href="#"><span>en</span></a></li>
           </ul>
         </div>
       </div>
     </footer>
-    <div class="footer-end">
-      <div class="container text-left">
-        <p>Alchemy Notes are offered by prospectus filed with the SEC and you should review the risks and uncertainties described in the prospectus prior to investing in the Notes. Alchemy is not a registered investment adviser, and the information provided is not intended as investment, legal, or tax advice. Alchemy Notes are not insured or guaranteed and investors may have negative returns. Historical Returns are not a promise of future results. Consult with your investment or financial advisor prior to investing.</p>
-        <p>For example a three-year $10,000 loan with a Alcehmy Rating of AA would have an interest rate of 5.32% and a 1% origination fee for an APR of 5.99% APR. You would receive $9,900 and make 36 scheduled monthly payments of $302. A five-year $10,000 loan with a Alchemy Rating of A would have an interest rate of 7.69% and a 5% origination fee for an APR of 9.88% APR. You would receive $9,500 and make 60 scheduled monthly payments of $201.28. Origination fees vary between 1%-5%. Annual percentage rates (APRs) through Alchemy range from 5.99% APR (AA) to 35.99% APR (HR) for first-time borrowers, with the lowest rates for the most creditworthy borrowers. Eligibility is not guaranteed, and requires that a sufficient number of investors commit funds to your account and that you meet credit and other conditions. Refer to Borrower Registration Agreement for details and all terms and conditions.</p>
-        <p class="text-center">Alchemy takes your privacy seriously. Please see Alchemy's Privacy Policy policy for more details.</p>
-      </div>
-    </div>
-    <div class="footer-end">
-      <div class="container text-center">© 2017-2018 Alchemy Finance, Inc. All Rights Reserved.</div>
-    </div>
     <!-- End demo purposes only-->
     <!-- jQuery-->
     <script src="/js/jquery.min.js"></script>

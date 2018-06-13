@@ -8,7 +8,7 @@ ul, li {
 
 .navbar-brand {
   padding: 5px;
-  width: 250px; }
+  width: 60px; }
   .navbar-brand img {
     width: 100%; }
 
@@ -94,24 +94,6 @@ ul.nav li, ul.nav li a {
 
 .social-circle {
   margin-top: 10px; }
-
-.footer-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: 15px auto;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-  .footer-menu li {
-    display: inline-block;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-    @media screen and (max-width: 768px) {
-      .footer-menu li {
-        font-size: 14px;
-        margin-right: 2px; } }
 
 .footer-end {
   padding: 10px;
@@ -286,8 +268,7 @@ button a:hover {
   text-decoration: none; }
 
 .footer-end p {
-  word-wrap: break-word;
-  margin-bottom: 1em; }
+  word-wrap: break-word; }
 
 @media screen and (min-width: 1000px) {
   #alchemy-about .carousel {
@@ -349,12 +330,18 @@ button a:hover {
       margin: 0 20%; } }
 
 .base_block {
+  max-width: 990px;
   background-color: #40acff;
   background-image: -webkit-radial-gradient(30% 50px, farthest-side, #379bf4 0, #6e1dbf 1200px);
   background-image: -o-radial-gradient(30% 50px, farthest-side, #379bf4 0, #6e1dbf 1200px);
   background-image: radial-gradient(farthest-side at 30% 50px, #379bf4 0, #6e1dbf 1200px);
   border: 1px solid #3d86eb;
-  border-radius: 8px; }
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .base_block .left_block {
     padding: 50px 25px; }
   .base_block .video_box {
@@ -376,10 +363,6 @@ button a:hover {
   .base_block h3 {
     color: #fff; }
 
-.timer {
-  width: 300px;
-  margin: 0 auto; }
-
 .flip-clock-wrapper .flip {
   -webkit-box-shadow: unset;
   box-shadow: unset;
@@ -391,12 +374,6 @@ button a:hover {
     font-size: 45px;
     text-shadow: unset; }
 
-.flip-clock-wrapper .flip:nth-child(5) li a div div.inn, .flip-clock-wrapper .flip:nth-child(6) li a div div.inn {
-  background: #6373d8; }
-
-.flip-clock-wrapper .flip:nth-child(8) li a div div.inn, .flip-clock-wrapper .flip:nth-child(9) li a div div.inn {
-  background: #5768d5; }
-
 .flip-clock-divider {
   width: 10px; }
   .flip-clock-divider .flip-clock-label {
@@ -405,43 +382,16 @@ button a:hover {
 .flip-clock-dot {
   opacity: 0; }
 
-.progress_warp {
-  margin: 10px 0; }
-
-span[class^="f_"] {
-  color: #fff;
-  font-size: small;
-  display: inline-block;
-  position: relative;
-  width: 100px; }
-
-span.f_left {
-  left: -30%; }
-
-span.f_right {
-  left: 30%; }
-
-.progress_warp {
-  margin-bottom: 30px; }
-
 .progress_bg {
-  background: rgba(71, 58, 159, 0.5);
-  padding: 8px 10px;
-  margin: 0 auto;
-  border-radius: 8px; }
+  background: rgba(81, 0, 101, 0.1);
+  padding: 15px 10px;
+  margin: 10px auto;
+  border-radius: 5px; }
   .progress_bg .progress {
     margin-bottom: 0;
-    background: transparent;
-    -webkit-box-shadow: unset;
-    box-shadow: unset; }
+    background: transparent; }
     .progress_bg .progress .progress-bar {
-      background-color: #fff;
-      border-radius: 4px;
-      text-align: right; }
-      .progress_bg .progress .progress-bar span {
-        color: #6b7ada;
-        font-size: large;
-        font-weight: bold; }
+      background-color: #fff; }
 
 button.coinBtn {
   border: 1px solid #fff;
@@ -450,12 +400,10 @@ button.coinBtn {
   -webkit-transition: background-color .15s, border-color .15s;
   -o-transition: background-color .15s, border-color .15s;
   transition: background-color .15s, border-color .15s;
-  padding: 5px 10px;
+  padding: 0 10px;
   line-height: 50px;
   border-radius: 8px;
-  font-weight: 500;
-  width: 100%;
-  margin-bottom: 20px; }
+  width: 100%; }
   button.coinBtn:hover {
     background-color: #e8eef6;
     border-color: #d9e3f1; }
@@ -466,16 +414,28 @@ button.coinBtn {
     -webkit-transition: background-color .15s, border-color .15s;
     -o-transition: background-color .15s, border-color .15s;
     transition: background-color .15s, border-color .15s;
-    padding: 5px 10px;
+    padding: 0 10px;
     line-height: 50px;
     border-radius: 8px;
-    font-weight: 500;
     width: 100%;
-    margin-bottom: 20px;
     margin-top: 20px; }
     button.coinBtn.reverseBtn:hover {
       background-color: rgba(255, 255, 255, 0.3);
       border-color: #d9e3f1; }
+
+body {
+  background-color: #1b1f47;
+  background: #1b1f47 url("../images/bg2.jpg") no-repeat bottom center; }
+
+.animatebg {
+  position: absolute;
+  overflow: hidden;
+  max-height: 900px;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
 
 canvas {
   display: block;
@@ -490,12 +450,64 @@ canvas {
   top: 0;
   background: #1b1f47 url("../images/bg.jpg") no-repeat top center; }
 
+ul {
+  -webkit-padding-start: 0px; }
+
+#footer {
+  padding: 10px 0;
+  background: #060115; }
+
+.footer-menu-wrapper {
+  vertical-align: middle; }
+  .footer-menu-wrapper .footer-menu {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin: 15px auto;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .footer-menu-wrapper .footer-menu li {
+      padding: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis; }
+      .footer-menu-wrapper .footer-menu li:hover {
+        background: #329998;
+        color: white; }
+        .footer-menu-wrapper .footer-menu li:hover a {
+          color: white;
+          text-decoration: none; }
+    @media screen and (max-width: 768px) {
+      .footer-menu-wrapper .footer-menu {
+        display: block; }
+        .footer-menu-wrapper .footer-menu li {
+          display: inline-block;
+          width: 23%;
+          padding: 0.25%;
+          margin: 5px 0.25%;
+          text-align: center;
+          border: 1px solid #329998; } }
+
+.social-nav {
+  display: block; }
+  .social-nav ul.social {
+    text-align: right;
+    width: 60%; }
+    .social-nav ul.social li {
+      text-align: center; }
+  @media screen and (max-width: 768px) {
+    .social-nav ul.social {
+      text-align: center; } }
+
 .index-wrapper {
   overflow: hidden;
   padding-top: 80px;
   position: relative;
   z-index: 12;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: auto; }
 
 .card-bg {
@@ -601,9 +613,10 @@ canvas {
       margin: 0; }
 
 .btn--violet {
-  background-color: rgba(210, 25, 225, 0.5);
-  color: #fff;
+  background-color: #fff;
+  color: #4cd0a5;
   margin: 15px auto;
+  border: 1px solid #4cd0a5;
   vertical-align: middle; }
   .btn--violet i {
     line-height: 15px;
@@ -635,5 +648,3 @@ canvas {
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); } }
-
-/*# sourceMappingURL=alchecoin.css.map */

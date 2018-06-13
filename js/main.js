@@ -490,9 +490,8 @@
     };
 
     var clock = $('.timer').FlipClock({
-    	countdown: true;
-    	clockFace: 'MinuteCounter';
-
+    	countdown: true,
+    	clockFace: 'MinuteCounter',
     });
 
 
