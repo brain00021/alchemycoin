@@ -1,49 +1,11 @@
-@import "oldAlchecoin.scss";
+// @import "oldAlchecoin.scss";
+@import "style.scss";
+@import "header.scss";
+@import "footer.scss";
 @import "countdown.scss";
 @import "animatebg.scss";
 @import "roadmap.scss";
-$green:#329998;
-// footer started
-ul{-webkit-padding-start: 0px;}
-#footer{
-  padding:10px 0;
-  background:#060115;
-}
-.footer-menu-wrapper{
-  vertical-align: middle;
-  .footer-menu{
-    text-align: left;
-    display: flex;
-    text-align: center;
-    margin:15px auto;
-    justify-content: space-around;
-    li{
-      padding:5px;
-      border-radius: 5px;
-      display: inline-block;
-      text-overflow: ellipsis;
-      &:hover{
-        background:$green;
-        color:white;
-        a{
-          color:white;
-          text-decoration: none;
-        }
-      }
-    }
-    @media screen and (max-width:768px){
-      display: block;
-      li{
-        display: inline-block;
-        width:23%;
-        padding:0.25%;
-        margin:5px 0.25%;
-        text-align: center;
-        border:1px solid $green;
-      }
-    }
-  } 
-}
+
 
 .social-nav{
   display:block;
@@ -77,7 +39,7 @@ ul{-webkit-padding-start: 0px;}
   position: relative;
   z-index: 30;
   margin:15px auto;
-  padding:15px;
+  padding:30px 25px;
 }
 // selection1
 .section-header{
@@ -102,23 +64,24 @@ ul{-webkit-padding-start: 0px;}
 
 }
 .heading{
-  display: block;
-  font-weight: 400;
+  // display: block;
+  // font-weight: 400;
   font-size: 36px;
   line-height: 1.5;
   text-align: center;
   color: #301570;
-  padding: 0;
+  padding: 10px 0 20px;
   margin: 0;
 }
-// SPOINSER
+// SPONSER - Our partner
 
 .sponser-wrapper{
   overflow: hidden;
   ul{
-    display:block;
+    // display:block;
     position: relative;
-    padding:15px;
+    text-align: center;
+    // padding:15px;
     .slick-prev{
       left:15px;
       font-family: 'Glyphicons Halflings';
@@ -140,9 +103,18 @@ ul{-webkit-padding-start: 0px;}
     }
   }
   li{
-    width:180px;
+    width:19%;
+    max-width: 180px;
+    // height: 80px;
+    vertical-align: middle;
     display: inline-block;
-    img{max-width:180px;}
+    margin:10px;
+    img{
+      width:100%;
+      max-height: 80px;
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -160,24 +132,24 @@ ul{-webkit-padding-start: 0px;}
 .icon-status-check{
    background-color:#301570;
 }
-.gradation{
-  position: relative;
-  width:62px;
-  margin:auto;
-  text-align: center;
-}
-.gradation__item{
-    width: 13px;
-    height: 28px;
-    border-radius: 3px;
-    background-color: #dadfea;
-    margin-right: 5px;
-    display: inline-block;
-}
+// .gradation{
+//   position: relative;
+//   width:62px;
+//   margin:auto;
+//   text-align: center;
+// }
+// .gradation__item{
+//     width: 13px;
+//     height: 28px;
+//     border-radius: 3px;
+//     background-color: #dadfea;
+//     margin-right: 5px;
+//     display: inline-block;
+// }
 
-.gradation__item--active{
-  background-color:#d219e1;
-}
+// .gradation__item--active{
+//   background-color:#d219e1;
+// }
 
 #alchemy-intro{
   margin-top:0px;
@@ -202,9 +174,9 @@ ul{-webkit-padding-start: 0px;}
 
 .btn--violet{
   background-color:#fff;
-  color:#4cd0a5;
+  color:$coin-purple;
   margin:15px auto;
-  border:1px solid #4cd0a5;
+  border:1px solid $coin-purple;
   vertical-align: middle;
   i{
     line-height:15px;
@@ -214,6 +186,9 @@ ul{-webkit-padding-start: 0px;}
   span{
     padding:0;
     margin:0;
+  }
+  &:hover{
+    background-color: $coin-purple;
   }
 }
 

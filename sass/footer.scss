@@ -1,0 +1,41 @@
+// footer started
+ul{-webkit-padding-start: 0px;}
+#footer{
+  padding:10px 0;
+  background:#060115;
+}
+.footer-menu-wrapper{
+  vertical-align: middle;
+  .footer-menu{
+    text-align: left;
+    display: flex;
+    text-align: center;
+    margin:15px auto;
+    justify-content: space-around;
+    li{
+      padding:5px;
+      border-radius: 5px;
+      display: inline-block;
+      text-overflow: ellipsis;
+      &:hover{
+        background:$green;
+        color:white;
+        a{
+          color:white;
+          text-decoration: none;
+        }
+      }
+    }
+    @media screen and (max-width:768px){
+      display: block;
+      li{
+        display: inline-block;
+        width:23%;
+        padding:0.25%;
+        margin:5px 0.25%;
+        text-align: center;
+        border:1px solid $green;
+      }
+    }
+  } 
+}
