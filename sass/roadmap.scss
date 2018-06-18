@@ -1,5 +1,4 @@
-$roadmap-ball:#5cc4ff;
-$ball-shadow: 2px 2px 7px 2px hsla(264, 100%, 50%, .4);
+
 .map-wrapper {
     padding: 20px 0;
     position: relative;
@@ -29,22 +28,6 @@ $ball-shadow: 2px 2px 7px 2px hsla(264, 100%, 50%, .4);
         margin: auto;
         z-index: -1;
                 box-shadow: $ball-shadow;
-    }
-}
-
-.road-map {
-    padding: 60px 0;
-    h3 {
-        padding: 20px 0 10px;
-        color: #fff;
-        text-align: center;
-        font-size: 36px;
-    }
-    h4 {
-        padding: 0px 0 20px;
-        color: $roadmap-ball;
-        text-align: center;
-        font-size: 28px;
     }
 }
 

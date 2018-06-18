@@ -1,0 +1,65 @@
+.manager-block {
+    width: 205px;
+    display: block;
+    margin: 0 auto 20px;
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+        text-decoration: none;
+        transform: scale(1.01);
+        box-shadow: 2px 2px 5px 1px rgba($coin-purple, .2);
+        img {
+            opacity: .5;
+        }
+        .manager-img {
+            position: relative;
+            &:before {
+                font-family: 'icomoon';
+                content: "\e036";
+                position: absolute;
+                display: none;
+                display: block;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -30%);
+                transition: scale .5s linear;
+                font-size: 48px;
+                text-align: center;
+                z-index: 2;
+            }
+        }
+
+        .manager-img:after {
+            content: '';
+            display: block;
+            background-color: rgba($coin-purple, .2);
+            z-index: 1;
+            width: 100%;
+            height: 205px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    img {
+        display: block;
+    }
+}
+
+.manager-text {
+    width: 100%;
+    padding: 0 5px;
+    background-color: rgba($ceo-darkblue, .5);
+    h4 {
+        color: #fff;
+        padding: 10px;
+        margin: 0;
+    }
+    p {
+        color: #fff;
+        text-align: center;
+        margin: 0;
+    }
+}
