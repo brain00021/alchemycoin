@@ -7,7 +7,7 @@ $(document).ready(function() {
 });
 // clock
 var clock = $('.timer').FlipClock( 3600, {
-		countdown: true;
+		countdown: true
 	});
 
 // animateBG
