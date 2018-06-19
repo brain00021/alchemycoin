@@ -2,7 +2,9 @@
 		// background: transparent url('../images/video_bg.png') 100% no-repeat;
 	}
 	.base_block {
-	// width: 100%;
+  // width: 100%;
+  position: relative;
+  z-index: 20;
 	background-color: #40acff;
 	background-image: radial-gradient(farthest-side at 30% 50px, #379bf4 0, #6e1dbf 1200px);
 	border: 1px solid #3d86eb;
