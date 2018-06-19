@@ -1,0 +1,22 @@
+.section-header h6 {
+  margin-bottom: 10px; }
+
+.section-header h4 {
+  color: #797979; }
+
+.section-body th span {
+  font-size: 1.0rem; }
+
+.section-body th p {
+  color: #301570;
+  margin: 0; }
+
+.heading {
+  display: block;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  color: #301570;
+  padding: 0;
+  margin: 0; }
