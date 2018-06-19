@@ -480,7 +480,7 @@ ul {
         .footer-menu-wrapper .footer-menu li:hover a {
           color: white;
           text-decoration: none; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       .footer-menu-wrapper .footer-menu {
         display: block; }
         .footer-menu-wrapper .footer-menu li {
@@ -519,6 +519,9 @@ ul {
   z-index: 30;
   margin: 15px auto;
   padding: 15px; }
+  @media screen and (max-width: 768px) {
+    .card-bg {
+      margin: 2.5%; } }
 
 .section-header h6 {
   margin-bottom: 10px; }
