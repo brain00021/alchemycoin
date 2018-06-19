@@ -41,7 +41,6 @@ html.no-js
     link(rel='stylesheet', href='/css/magnific-popup.css/')
     // Bootstrap
     link(rel='stylesheet', href='/css/bootstrap.css')
-    link(rel="stylesheet" href="/css/style.css")
     //
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     link(rel='stylesheet', href='/css/style.css')
@@ -54,11 +53,13 @@ html.no-js
       script(src='/js/respond.min.js')
   body
     block header
-    .index-wrapper
+    .container.index-wrapper
       block countdown
       block section1
       block section2
       block sponsor
+      block roadmap
+      block manager
       block contact
     block animatebg
     block footer
@@ -80,9 +81,6 @@ html.no-js
     // Magnific Popup
     script(src='/js/jquery.magnific-popup.min.js')
     script(src='/js/magnific-popup-options.js')
-    // Google Map
-    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false')
-    script(src='/js/google_map.js')
     script(src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js")
     script(src="http://threejs.org/examples/js/libs/stats.min.js")
     // For demo purposes only styleswitcher ( You may delete this anytime )

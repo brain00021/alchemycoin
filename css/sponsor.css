@@ -1,0 +1,35 @@
+.sponser-wrapper {
+  overflow: hidden; }
+  .sponser-wrapper ul {
+    display: block;
+    position: relative;
+    padding: 15px; }
+    .sponser-wrapper ul .slick-prev {
+      left: 15px;
+      font-family: 'Glyphicons Halflings'; }
+      .sponser-wrapper ul .slick-prev::before {
+        color: #301570; }
+    .sponser-wrapper ul .slick-next {
+      right: 15px;
+      font-family: 'Glyphicons Halflings'; }
+      .sponser-wrapper ul .slick-next::before {
+        color: #301570; }
+  .sponser-wrapper li {
+    width: 180px;
+    display: inline-block; }
+    .sponser-wrapper li img {
+      max-width: 180px; }
+
+.icon-status {
+  background-color: gray;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  line-height: 25px;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; }
+
+.icon-status-check {
+  background-color: #301570; }

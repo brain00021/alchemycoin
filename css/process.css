@@ -1,0 +1,46 @@
+.gradation {
+  position: relative;
+  width: 62px;
+  margin: auto;
+  text-align: center; }
+
+.gradation__item {
+  width: 13px;
+  height: 28px;
+  border-radius: 3px;
+  background-color: #dadfea;
+  margin-right: 5px;
+  display: inline-block; }
+
+.gradation__item--active {
+  background-color: #d219e1; }
+
+#alchemy-intro {
+  margin-top: 0px;
+  padding-bottom: 0px; }
+  #alchemy-intro .section-heading {
+    margin-bottom: 0px; }
+  #alchemy-intro .section1-icon .alchemy-block {
+    width: 49%;
+    margin: 0.5%;
+    padding: 10px;
+    display: inline-block;
+    height: auto; }
+    #alchemy-intro .section1-icon .alchemy-block:first-child {
+      margin-left: 0%; }
+    #alchemy-intro .section1-icon .alchemy-block h2 {
+      margin: 0; }
+
+.btn--violet {
+  background-color: #fff;
+  color: #4cd0a5;
+  margin: 15px auto;
+  border: 1px solid #4cd0a5;
+  vertical-align: middle; }
+  .btn--violet i {
+    line-height: 15px;
+    vertical-align: top;
+    margin-right: 15px; }
+  .btn--violet span {
+    padding: 0;
+    margin: 0; }
