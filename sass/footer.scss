@@ -1,9 +1,11 @@
 // footer started
 ul{-webkit-padding-start: 0px;}
-#footer{
+#footer{  
   padding:10px 0;
   background:#060115;
+  overflow: hidden;
 }
+
 .footer-menu-wrapper{
   vertical-align: middle;
   .footer-menu{
@@ -39,3 +41,20 @@ ul{-webkit-padding-start: 0px;}
     }
   } 
 }
+// social nav
+.social-nav{
+  display:block;
+  ul.social{
+   text-align: right;
+   width:60%;
+   li{
+     text-align: center;
+   }
+  }
+  @media screen and (max-width:768px){
+    ul.social{
+      text-align: center;
+    }
+  }
+}
+// footer finished
