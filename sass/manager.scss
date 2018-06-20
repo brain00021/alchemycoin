@@ -14,6 +14,7 @@
         }
         .manager-img {
             position: relative;
+            @include size(205px, 205px);
             &:before {
                 font-family: 'icomoon';
                 content: "\e036";
@@ -28,23 +29,22 @@
                 text-align: center;
                 z-index: 2;
             }
+            &:after {
+                content: '';
+                display: block;
+                background-color: rgba($coin-purple, .2);
+                z-index: 1;
+                width: 100%;
+                height: 205px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
         }
-
-        .manager-img:after {
-            content: '';
+        img {
             display: block;
-            background-color: rgba($coin-purple, .2);
-            z-index: 1;
-            width: 100%;
-            height: 205px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
         }
-    }
-    img {
-        display: block;
     }
 }
 
@@ -63,3 +63,10 @@
         margin: 0;
     }
 }
+.manager-dialog{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 5px 1px rgba($green, .1);
+	}

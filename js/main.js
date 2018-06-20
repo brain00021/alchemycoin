@@ -2,7 +2,7 @@
 (function() {
     'use strict';
 
-    // iPad and iPod detection	
+    // iPad and iPod detection  
     var isiPad = function() {
         return (navigator.platform.indexOf("iPad") != -1);
     };
@@ -490,11 +490,14 @@
     };
 
     var clock = $('.timer').FlipClock({
-    	countdown: true,
-    	clockFace: 'MinuteCounter',
+        countdown: true,
+        clockFace: 'MinuteCounter',
     });
 
-
+    $('.manager-block').magnificPopup({
+        type: 'inline',
+        midClick: true
+    });
 
 
 
