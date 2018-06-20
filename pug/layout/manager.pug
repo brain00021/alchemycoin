@@ -1,10 +1,10 @@
 block manager
-	.black-block
+	section.black-block.js-manage(data-section="management")
 		h3 Management Team
 		.row
 			- for(var i = 1; i < 9; i++)
 				.col-md-3.col-xs-6.col-xxs-12
-					a.manager-block
+					a.manager-block.to-animate
 						.manager-img 
 							img.img-responsive(src="/images/ceo/ceo"+i+".jpg")
 						.manager-text 

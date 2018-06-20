@@ -2,6 +2,7 @@
 .map-wrapper {
     padding: 20px 0;
     position: relative;
+    margin-bottom:60px;
     &:before {
         content: '';
         display: block;
@@ -97,7 +98,7 @@
   screen and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
     .map-wrapper {
     	padding-left: 10px;
-    	padding-right: 10px;
+      padding-right: 10px;
         &:before {
             left: 50px;
             margin: 0;

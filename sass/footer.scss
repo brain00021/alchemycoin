@@ -10,14 +10,14 @@ ul{-webkit-padding-start: 0px;}
   vertical-align: middle;
   .footer-menu{
     text-align: left;
-    display: flex;
+    display: block;
     text-align: center;
     margin:15px auto;
-    justify-content: space-around;
     li{
       padding:5px;
       border-radius: 5px;
       display: inline-block;
+      margin-left:5%;
       text-overflow: ellipsis;
       &:hover{
         background:$green;
@@ -47,6 +47,7 @@ ul{-webkit-padding-start: 0px;}
   ul.social{
    text-align: right;
    width:60%;
+   line-height: 100px;
    li{
      text-align: center;
    }

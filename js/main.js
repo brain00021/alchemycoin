@@ -152,15 +152,15 @@
     // Home
 
     var homeAnimate = function() {
-        if ($('#alchemy-home').length > 0) {
+        if ($('#js-home').length > 0) {
 
-            $('#alchemy-home').waypoint(function(direction) {
+            $('#js-home').waypoint(function(direction) {
 
                 if (direction === 'down' && !$(this.element).hasClass('animated')) {
 
 
                     setTimeout(function() {
-                        $('#alchemy-home .to-animate').each(function(k) {
+                        $('#js-home .to-animate').each(function(k) {
                             var el = $(this);
 
                             setTimeout(function() {
@@ -209,19 +209,19 @@
     };
 
     var investAnimate = function() {
-        if ($('#alchemy-invest').length > 0) {
+        if ($('.js-pre').length > 0) {
 
-            $('#alchemy-invest').waypoint(function(direction) {
+            $('.js-pre').waypoint(function(direction) {
 
                 if (direction === 'down' && !$(this.element).hasClass('animated')) {
 
 
                     setTimeout(function() {
-                        $('#alchemy-invest .to-animate').each(function(k) {
+                        $('.js-pre .to-animate').each(function(k) {
                             var el = $(this);
 
                             setTimeout(function() {
-                                el.addClass('fadeInRight animated');
+                                el.addClass('fadeInDown animated');
                             }, k * 200, 'easeInOutExpo');
 
                         });
@@ -237,15 +237,15 @@
     };
 
     var workAnimate = function() {
-        if ($('#alchemy-work').length > 0) {
+        if ($('.js-roadmap').length > 0) {
 
-            $('#alchemy-work').waypoint(function(direction) {
+            $('.js-roadmap').waypoint(function(direction) {
 
                 if (direction === 'down' && !$(this.element).hasClass('animated')) {
 
 
                     setTimeout(function() {
-                        $('#alchemy-work .to-animate').each(function(k) {
+                        $('.js-roadmap .to-animate').each(function(k) {
                             var el = $(this);
 
                             setTimeout(function() {
@@ -266,7 +266,7 @@
 
 
     var testimonialAnimate = function() {
-        var testimonial = $('#alchemy-testimonials');
+        var testimonial = $('.js-whyalchemy');
         if (testimonial.length > 0) {
 
             testimonial.waypoint(function(direction) {
@@ -281,7 +281,7 @@
                             var el = $(this);
 
                             setTimeout(function() {
-                                el.addClass('fadeInUp animated');
+                                el.addClass('fadeInLeft animated');
                             }, k * 200, 'easeInOutExpo');
 
                         });
@@ -308,7 +308,7 @@
     };
 
     var servicesAnimate = function() {
-        var services = $('#alchemy-services');
+        var services = $('.js-manage');
         if (services.length > 0) {
 
             services.waypoint(function(direction) {
