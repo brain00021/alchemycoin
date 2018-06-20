@@ -1880,8 +1880,8 @@ canvas {
     margin: 0.5%;
     padding: 10px;
     display: inline-block;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     height: auto; }
     @media screen and (min-width: 769px) {
       #alchemy-intro .section1-icon .alchemy-block {
