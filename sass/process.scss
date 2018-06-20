@@ -20,18 +20,35 @@
 #alchemy-intro{
   margin-top:0px;
   padding-bottom: 0px;
+  text-align: center;
+  display: flex;
+  width:100%;
   .section-heading{
     margin-bottom: 0px;
   }
   .section1-icon .alchemy-block{
     width:49%;
-    margin: 0.5%;
+    margin: 0.25%;
+    vertical-align: middle;
+    align-items:stretch;
     padding:10px;
     display: inline-block;
     box-shadow: 0 0 8px rgba(#000,0.2);
     height:auto;
+
     @media screen and (min-width:769px){
       min-height:150px;
+    }
+    @media screen and (min-width:988px){
+      width:32.3%;
+      min-height: 180px;
+      vertical-align: top;
+      &:first-child{
+        margin-left: 0%;
+      }
+      &:nth-child(4){
+        margin-left: 0%;
+      }
     }
     @media screen and (max-width:768px){
       width:100%;
@@ -46,18 +63,30 @@
 }
 
 .btn--violet{
-  background-color:#fff;
+  background-color:none;
   color:#4cd0a5;
   margin:15px auto;
   border:1px solid #4cd0a5;
   vertical-align: middle;
+  &:hover,&:active{
+    background:#fff;
+  }
   i{
-    line-height:15px;
+    line-height:1.5rem;
     vertical-align: top;
     margin-right:15px;
   }
   span{
     padding:0;
     margin:0;
+    font-size: 1.5rem;
+  }
+}
+
+// process的圖片檔
+.process__middle{
+  g#_3_line circle{
+    animation: rote1 10s infinite ease;
+    transform-origin: 0 0 0;
   }
 }
