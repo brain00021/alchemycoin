@@ -1119,20 +1119,32 @@ h6 {
   animation-fill-mode: both; }
 
 .card-bg {
-  background: #fff;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  background: #f4f4f4;
   border-radius: 25px;
   position: relative;
   z-index: 30;
   margin: 15px auto;
-  padding: 30px 25px; }
+  padding: 15px;
+  border: 2px solid #329998; }
+  @media screen and (max-width: 768px) {
+    .card-bg {
+      margin: 2.5% 0; } }
 
-.section-header h6 {
-  margin-bottom: 10px; }
+.card-bg2 {
+  position: relative;
+  z-index: 30;
+  padding: 15px;
+  margin: 15px auto; }
+  @media screen and (max-width: 768px) {
+    .card-bg2 {
+      margin: 2.5% 0; } }
 
-.section-header h4 {
-  color: #797979; }
+.section-header {
+  margin: auto; }
+  .section-header h6 {
+    margin-bottom: 10px; }
+  .section-header h4 {
+    color: #797979; }
 
 .section-body th span {
   font-size: 1.0rem; }
@@ -1145,7 +1157,7 @@ h6 {
   font-size: 36px;
   line-height: 1.5;
   text-align: center;
-  color: #301570;
+  color: #329998;
   padding: 10px 0 20px;
   margin: 0; }
 
@@ -1166,7 +1178,6 @@ h6 {
         color: #301570; }
   .sponser-wrapper li {
     width: 19%;
-    max-width: 180px;
     vertical-align: middle;
     display: inline-block;
     margin: 10px; }
@@ -1190,45 +1201,6 @@ h6 {
 .icon-status-check {
   background-color: #301570; }
 
-#alchemy-intro {
-  margin-top: 0px;
-  padding-bottom: 0px; }
-  #alchemy-intro .section-heading {
-    margin-bottom: 0px; }
-  #alchemy-intro .section1-icon .alchemy-block {
-    width: 49%;
-    margin: 0.5%;
-    padding: 10px;
-    display: inline-block;
-    height: auto; }
-    #alchemy-intro .section1-icon .alchemy-block:first-child {
-      margin-left: 0%; }
-    #alchemy-intro .section1-icon .alchemy-block h2 {
-      margin: 0; }
-
-.btn--violet {
-  background-color: #fff;
-  color: #6e1dbf;
-  margin: 15px auto;
-  border: 1px solid #6e1dbf;
-  vertical-align: middle; }
-  .btn--violet i {
-    line-height: 15px;
-    vertical-align: top;
-    margin-right: 15px; }
-  .btn--violet span {
-    padding: 0;
-    margin: 0; }
-  .btn--violet:hover {
-    background-color: #6e1dbf; }
-
-.process__middle g#_3_line circle {
-  -webkit-animation: rote1 10s infinite ease;
-  animation: rote1 10s infinite ease;
-  -webkit-transform-origin: 0 0 0;
-  -ms-transform-origin: 0 0 0;
-  transform-origin: 0 0 0; }
-
 .index-wrapper {
   overflow: hidden;
   padding-top: 100px;
@@ -1237,18 +1209,18 @@ h6 {
   max-width: 1300px;
   margin: auto; }
 
-.card-bg {
-  background: #fff;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  border-radius: 25px;
-  position: relative;
-  z-index: 30;
+.black-block {
+  text-align: center;
   margin: 15px auto;
-  padding: 15px; }
-  @media screen and (max-width: 768px) {
-    .card-bg {
-      margin: 2.5% 0; } }
+  color: #fff; }
+  .black-block h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .black-block h4 {
+    color: #329998;
+    font-size: 1.5rem; }
 
 @-webkit-keyframes rote1 {
   0% {
@@ -1278,6 +1250,7 @@ h6 {
     #alchemy-header {
       margin-top: 0;
       background: #fff;
+      padding: 5px 0;
       -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -1420,17 +1393,14 @@ ul {
   vertical-align: middle; }
   .footer-menu-wrapper .footer-menu {
     text-align: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     text-align: center;
-    margin: 15px auto;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    margin: 15px auto; }
     .footer-menu-wrapper .footer-menu li {
       padding: 5px;
       border-radius: 5px;
       display: inline-block;
+      margin-left: 5%;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis; }
       .footer-menu-wrapper .footer-menu li:hover {
@@ -1454,7 +1424,8 @@ ul {
   display: block; }
   .social-nav ul.social {
     text-align: right;
-    width: 60%; }
+    width: 60%;
+    line-height: 100px; }
     .social-nav ul.social li {
       text-align: center; }
   @media screen and (max-width: 768px) {
@@ -1631,7 +1602,8 @@ canvas {
 
 .map-wrapper {
   padding: 20px 0;
-  position: relative; }
+  position: relative;
+  margin-bottom: 60px; }
   .map-wrapper:before {
     content: '';
     display: block;
@@ -1823,16 +1795,6 @@ canvas {
   color: #301570;
   margin: 0; }
 
-.heading {
-  display: block;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.5;
-  text-align: center;
-  color: #301570;
-  padding: 0;
-  margin: 0; }
-
 .sponser-wrapper {
   overflow: hidden; }
   .sponser-wrapper ul {
@@ -1888,20 +1850,38 @@ canvas {
 
 #alchemy-intro {
   margin-top: 0px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
   #alchemy-intro .section-heading {
     margin-bottom: 0px; }
   #alchemy-intro .section1-icon .alchemy-block {
     width: 49%;
-    margin: 0.5%;
+    margin: 0.25%;
+    vertical-align: middle;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     padding: 10px;
     display: inline-block;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     height: auto; }
     @media screen and (min-width: 769px) {
       #alchemy-intro .section1-icon .alchemy-block {
         min-height: 150px; } }
+    @media screen and (min-width: 988px) {
+      #alchemy-intro .section1-icon .alchemy-block {
+        width: 32.3%;
+        min-height: 180px;
+        vertical-align: top; }
+        #alchemy-intro .section1-icon .alchemy-block:first-child {
+          margin-left: 0%; }
+        #alchemy-intro .section1-icon .alchemy-block:nth-child(4) {
+          margin-left: 0%; } }
     @media screen and (max-width: 768px) {
       #alchemy-intro .section1-icon .alchemy-block {
         width: 100%; } }
@@ -1911,17 +1891,27 @@ canvas {
       margin: 0; }
 
 .btn--violet {
-  background-color: #fff;
+  background-color: none;
   color: #4cd0a5;
   margin: 15px auto;
   border: 1px solid #4cd0a5;
   vertical-align: middle; }
+  .btn--violet:hover, .btn--violet:active {
+    background: #fff; }
   .btn--violet i {
-    line-height: 15px;
+    line-height: 1.5rem;
     vertical-align: top;
     margin-right: 15px; }
   .btn--violet span {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    font-size: 1.5rem; }
+
+.process__middle g#_3_line circle {
+  -webkit-animation: rote1 10s infinite ease;
+  animation: rote1 10s infinite ease;
+  -webkit-transform-origin: 0 0 0;
+  -ms-transform-origin: 0 0 0;
+  transform-origin: 0 0 0; }
 
 /*# sourceMappingURL=alchecoin.css.map */

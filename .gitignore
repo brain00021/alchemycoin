@@ -1,11 +1,2 @@
-html/footer.html
-prepros-6.config
-html/header.html
-html/template.html
-html/borrow/work.html
-html/borrow/service.html
-html/borrow/customers.html
-html/borrow/cumstomer.html
-html/borrow/country.html
-html/layout/contact.html
-html/borrow/about.html
+node_modules
+.DS_Store

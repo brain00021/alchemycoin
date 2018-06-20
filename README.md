@@ -1,20 +1,91 @@
-## AlcheMycoin製作
+# balanced-match
 
-* 1.第一區塊
-  希望讓使用者先看完影片，請專業決定這樣的條件下，影片要放左還右
-  參考(https://eo.trade/)，元件包含日期倒數、進度條、加入白名單按鈕、白皮書按鈕
-  希望有漸層色，logo 改成白色加上白字(類似 https://bankera.com/ or https://moxy.one/ 的)，或更有設計感
-  背景動畫希望像 https://moxy.one/ 一樣有科技感
-* 2.pre-ico 保留(前期會存在，後期會移除，所以要能讓我們移除後不會感覺奇怪)
-* 3.about alchemy 保留
-* 4.supply-demand marketplace 移除
-* 5.why alchemy 保留
-* 6.The Alchemy P2P Lending Process 保留
-* 7.Projected Roadmap，設計成節點 roadmap(類似 https://eo.trade/ 的)
-* 8.Distribution of Funds 移除
-* 9.FAQ 移除
-* 10.Alchemy’s Platform Experience 移除
-* 11.Our Partners 移到這裡，logo 縮小，整齊排列
-* 12.Media Coverage 移到這裡，logo 縮小，整齊排列
-* 13.Management Team 重新設計(不要六角形)，去背有設計感，列表人物待確定
-* 14.Advisors 重新設計(不要六角形)，去背有設計感，列表人物待確定
+Match balanced string pairs, like `{` and `}` or `<b>` and `</b>`. Supports regular expressions as well!
+
+[![build status](https://secure.travis-ci.org/juliangruber/balanced-match.svg)](http://travis-ci.org/juliangruber/balanced-match)
+[![downloads](https://img.shields.io/npm/dm/balanced-match.svg)](https://www.npmjs.org/package/balanced-match)
+
+[![testling badge](https://ci.testling.com/juliangruber/balanced-match.png)](https://ci.testling.com/juliangruber/balanced-match)
+
+## Example
+
+Get the first matching pair of braces:
+
+```js
+var balanced = require('balanced-match');
+
+console.log(balanced('{', '}', 'pre{in{nested}}post'));
+console.log(balanced('{', '}', 'pre{first}between{second}post'));
+console.log(balanced(/\s+\{\s+/, /\s+\}\s+/, 'pre  {   in{nest}   }  post'));
+```
+
+The matches are:
+
+```bash
+$ node example.js
+{ start: 3, end: 14, pre: 'pre', body: 'in{nested}', post: 'post' }
+{ start: 3,
+  end: 9,
+  pre: 'pre',
+  body: 'first',
+  post: 'between{second}post' }
+{ start: 3, end: 17, pre: 'pre', body: 'in{nest}', post: 'post' }
+```
+
+## API
+
+### var m = balanced(a, b, str)
+
+For the first non-nested matching pair of `a` and `b` in `str`, return an
+object with those keys:
+
+* **start** the index of the first match of `a`
+* **end** the index of the matching `b`
+* **pre** the preamble, `a` and `b` not included
+* **body** the match, `a` and `b` not included
+* **post** the postscript, `a` and `b` not included
+
+If there's no match, `undefined` will be returned.
+
+If the `str` contains more `a` than `b` / there are unmatched pairs, the first match that was closed will be used. For example, `{{a}` will match `['{', 'a', '']` and `{a}}` will match `['', 'a', '}']`.
+
+### var r = balanced.range(a, b, str)
+
+For the first non-nested matching pair of `a` and `b` in `str`, return an
+array with indexes: `[ <a index>, <b index> ]`.
+
+If there's no match, `undefined` will be returned.
+
+If the `str` contains more `a` than `b` / there are unmatched pairs, the first match that was closed will be used. For example, `{{a}` will match `[ 1, 3 ]` and `{a}}` will match `[0, 2]`.
+
+## Installation
+
+With [npm](https://npmjs.org) do:
+
+```bash
+npm install balanced-match
+```
+
+## License
+
+(MIT)
+
+Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

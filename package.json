@@ -1,28 +1,49 @@
 {
-  "name": "Finance1221",
+  "name": "balanced-match",
+  "description": "Match balanced character pairs, like \"{\" and \"}\"",
   "version": "1.0.0",
-  "description": "外包案件",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass sass/ --output css --source-map-embed --source-map-contents | postcss --use autoprefixer css -d css",
-    "watch:sass": "npm run sass -- --watch"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brain00021/Finance1221.git"
+    "url": "git://github.com/juliangruber/balanced-match.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brain00021/Finance1221/issues"
+  "homepage": "https://github.com/juliangruber/balanced-match",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test",
+    "bench": "make bench"
   },
-  "homepage": "https://github.com/brain00021/Finance1221#readme",
-  "dependencies": {
-    "autoprefixer": "^7.2.4",
-    "node-sass": "^4.7.2",
-    "postcss-cli": "^4.1.1",
-    "source-map": "^0.6.1"
+  "dependencies": {},
+  "devDependencies": {
+    "matcha": "^0.7.0",
+    "tape": "^4.6.0"
+  },
+  "keywords": [
+    "match",
+    "regexp",
+    "test",
+    "balanced",
+    "parse"
+  ],
+  "author": {
+    "name": "Julian Gruber",
+    "email": "mail@juliangruber.com",
+    "url": "http://juliangruber.com"
+  },
+  "license": "MIT",
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/8..latest",
+      "firefox/20..latest",
+      "firefox/nightly",
+      "chrome/25..latest",
+      "chrome/canary",
+      "opera/12..latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
   }
 }
