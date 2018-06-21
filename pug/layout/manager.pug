@@ -1,17 +1,35 @@
 block manager
-	section.black-block.js-manage(data-section="management")
-		h3 Management Team
+	section.black-block.js-manage(data-section="managers")
+		h3 Managers
 		.row
 			- for (var i = 1; i < 9; i++)
 				.col-md-3.col-xs-6.col-xxs-12
-					a.manager-block.to-animate(href=".manager-dialog")
+					a.manager-block.to-animate(href=".manager-dialog"+i)
 						.manager-img
-							img.img-responsive(src="/images/ceo/ceo"+i+".jpg")
+							img(src="/images/ceo/ceo"+i+".jpg")
 						.manager-text 
 							h4 CEO NAME
 							p Chief Financial Officer
-					.manager-dialog.mfp-hide
-						image.img-responsive(src="/images/ceo/ceo"+i+".jpg")
-						.manager-text 
-							h4 CEO NAME
+			- for (var i = 1; i < 9; i++)				
+				.mfp-hide(class="manager-dialog"+i)
+					image.img-responsive(src="/images/ceo/ceo"+i+".jpg")
+					.manager-text 
+						h4 CEO NAME
+						p Chief Financial Officer
+	section.black-block.js-manage(data-section="advisors")
+		h3 Advisiors
+		.row
+			- for (var i = 1; i < 9; i++)
+				.col-md-3.col-xs-6.col-xxs-12
+					a.advisor-block.to-animate(href=".advisor-dialog"+i)
+						.advisor-img
+							img(src="/images/ceo/ceo"+i+".jpg")
+						.advisor-text 
+							h4 Advisor NAME
 							p Chief Financial Officer
+			- for (var i = 1; i < 9; i++)				
+				.mfp-hide(class="advisor-dialog"+i)
+					image.img-responsive(src="/images/ceo/ceo"+i+".jpg")
+					.advisor-text 
+						h4 Advisor NAME
+						p Chief Financial Officer

@@ -494,9 +494,14 @@
         clockFace: 'MinuteCounter',
     });
 
-    $('.manager-block').magnificPopup({
+    $('a.manager-block').magnificPopup({
         type: 'inline',
-        midClick: true
+        midClick: true,
+    });
+    
+   $('a.advisor-block').magnificPopup({
+    type: 'inline',
+    midClick: true,
     });
 
 
