@@ -1551,7 +1551,7 @@ body {
 .animatebg {
   position: absolute;
   overflow: hidden;
-  max-height: 900px;
+  max-height: 1500px;
   top: 0;
   left: 0;
   right: 0;
