@@ -58,7 +58,7 @@
 			background: #6b7ada;
 			color: #fff;
 			font-size: 45px;
-			text-shadow:unset;
+			border: .5px solid rgba(#fff,.3) ;
 		}
 	}
 	.flip:nth-child(5) li a div div.inn,.flip:nth-child(6) li a div div.inn{
@@ -121,7 +121,18 @@ span.f_right{
 		}
 	}
    }
-
+.flip-clock-divider .flip-clock-label{
+	right: -60px;
+}
+.flip-clock-divider.minutes .flip-clock-label{
+	right:-66px
+}
+.flip-clock-divider.seconds .flip-clock-label{
+	right:-66px
+}
+.flip-clock-wrapper ul li a div.up:after{
+	background-color: rgba($coin-purple,.2);
+}
 	@mixin button($bg_color, $border_color, $color, $hover_bg, $hover_border) {
 		border: 1px solid $border_color;
 		color: $color;

@@ -1,38 +1,42 @@
 
 
 // SPOINSER
-
+// SPONSER - Our partner
 .sponser-wrapper {
-  overflow: hidden;
-  ul{
-    display:block;
-    position: relative;
-    padding:15px;
-    .slick-prev{
-      left:15px;
-      font-family: 'Glyphicons Halflings';
-      &::before{
-          color:#301570;
-      }
+  position: relative;
+    overflow: hidden;
+    ul {
+        position: relative;
+        text-align: center;
+        .slick-prev {
+            left: 15px;
+            &:before {
+                color: #301570;
+                content: "\e079";
+                font-family: 'Glyphicons Halflings';
+            }
+        }
+        .slick-next {
+            right: 15px;
+            &:before {
+                color: #301570;
+                content: "\e080";
+                font-family: 'Glyphicons Halflings';
+            }
+        }
     }
-    .slick-next {
-      right:15px;
-      font-family: 'Glyphicons Halflings';
-      &::before{
-          // width: 0;
-          // height: 0;
-          // border-style: solid;
-          // border-width: 25px 0 25px 25px;
-          // border-color: transparent transparent transparent #301570;
-          color:#301570;
-      }
+    li {
+        width: 19%;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 10px;
+        img {
+            width: auto;
+            max-height: 80px;
+            display: block;
+            margin: 0 auto;
+        }
     }
-  }
-  li{
-    width:auto;
-    display: inline-block;
-    img{max-width:180px;}
-  }
 }
 
 .icon-status {
