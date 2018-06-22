@@ -116,16 +116,20 @@
     .map-card {
     	min-height:90px;
         padding-left:10%;
- 
+        margin-bottom: 10px;
         p:nth-child(n) {
             text-align: left;
-            padding: 10px 10px 10px 20px;
-            margin-left: 10px;
-            width: 90%;
+            padding: 0;
+            margin-left:30px;
+            font-size: 16px;
+            width: 100%;
         }
         &:before {
             left: 28px;
             margin: 0;
+        }
+        &:last-child{
+            min-height: 100px;
         }
     }
 }

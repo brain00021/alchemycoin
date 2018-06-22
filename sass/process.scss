@@ -63,10 +63,9 @@
 }
 
 .btn--violet{
-  background-color:none;
-  color:#4cd0a5;
+  color:$logo-light;
   margin:15px auto;
-  border:1px solid #4cd0a5;
+  border:1px solid $logo-light;
   vertical-align: middle;
   &:hover,&:active{
     background:#fff;

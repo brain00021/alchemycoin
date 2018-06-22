@@ -2,8 +2,14 @@ $font-primary: 'Source Sans Pro',
 Arial,
 sans-serif;
 // coin new color start
-$green:#329998;
-$coin-purple:#6e1dbf;
+$heading:#fff;
+$card-bg:#fff;
+$text-color:#797979;
+$logo-light:#a91dd9;
+$logo-dark:#6428cf;
+$flip-color:#A770EF;
+$purple:#6e1dbf;
+$hotpink:#d219e1;
 $ceo-darkblue:#21283f;
 $roadmap-ball:#5cc4ff;
 $ball-shadow: 2px 2px 7px 2px hsla(264, 100%, 50%, .4);
@@ -11,7 +17,7 @@ $ball-shadow: 2px 2px 7px 2px hsla(264, 100%, 50%, .4);
 $grid-gutter-width: 40px !default;
 $border-radius-base : 4px !default;
 $padding-base-vertical: 14px !default;
-$brand-primary: #52d3aa !default;
+$brand-primary: $logo-dark;
 $brand-secondary: #3f95ea !default;
 $brand-white: #fff;
 $brand-black: #000;
@@ -198,12 +204,12 @@ body {
 }
 
 a {
-    color: $brand-primary;
+    color: $hotpink;
     @include transition(.5s);
     &:hover,
     &:active,
     &:focus {
-        color: $brand-primary;
+        color: $hotpink;
         outline: none;
     }
 }
@@ -406,8 +412,10 @@ h6 {
             @include transition(.5s);
         }
         >.alchemy-text {
+            color: $text-color;
             position: relative;
             z-index: 10;
+            // padding: 1rem .5rem 0;
             .alchemy-intro-icon {
                 font-size: 50px;
                 color: $brand-primary;
@@ -446,55 +454,6 @@ h6 {
     }
 }
 
-.watch-video {
-    text-align: center;
-    width: 100%;
-    display: block;
-    float: left;
-    span {
-        display: block;
-        margin-bottom: 20px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    .btn-video {
-        display: block;
-        font-size: 60px;
-        height: 120px;
-        width: 120px;
-        margin: 0 auto;
-        border: 2px solid $brand-primary;
-        line-height: 0px;
-        display: table;
-        text-align: center;
-        @include border-radius(50%);
-        &:hover,
-        &:focus,
-        &:active {
-            text-decoration: none;
-        }
-        i {
-            position: relative;
-            display: table-cell;
-            vertical-align: middle;
-            margin: 0;
-            padding: 0;
-            right: -9px; // top: -1px;
-            @include transition(.3s);
-        }
-        &:hover,
-        &:focus {
-            i {
-                -webkit-transform: scale(1.1);
-                -moz-transform: scale(1.1);
-                -ms-transform: scale(1.1);
-                -o-transform: scale(1.1);
-                transform: scale(1.1);
-            }
-        }
-    }
-}
 
 #alchemy-services,
 #alchemy-testimonials,
@@ -785,57 +744,6 @@ h6 {
         }
         h3 {
             color: rgba(255, 255, 255, .8);
-        }
-    }
-    .alchemy-project-item {
-        display: block;
-        width: 100%;
-        position: relative;
-        top: 0;
-        background: $brand-white;
-        overflow: hidden;
-        z-index: 9;
-        margin-bottom: 30px;
-        @include border-radius(7px);
-        @include transition(.3s);
-        img {
-            z-index: 8;
-            opacity: 1;
-            @include transition(.3s);
-        }
-        .alchemy-text {
-            padding: 10px 20px;
-            h2,
-            span {
-                text-decoration: none!important;
-            }
-            h2 {
-                font-size: 18px;
-                font-weight: bold;
-                margin: 0;
-            }
-            span {
-                color: lighten($brand-black, 70%);
-                font-size: 16px;
-                font-weight: 400;
-            }
-        }
-        &:hover,
-        &:focus {
-            -webkit-box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.4);
-            -moz-box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.4);
-            -ms-box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.4);
-            -o-box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.4);
-            box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.4);
-            text-decoration: none;
-            top: -15px;
-            img {
-                opacity: .7;
-            }
-            h2,
-            span {
-                text-decoration: none!important;
-            }
         }
     }
 }

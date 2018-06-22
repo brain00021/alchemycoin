@@ -9,34 +9,33 @@ ul{-webkit-padding-start: 0px;}
 .footer-menu-wrapper{
   vertical-align: middle;
   .footer-menu{
-    text-align: left;
-    display: block;
-    text-align: center;
-    margin:15px auto;
+    display: flex;
+    align-content:center;
+          align-items:stretch;
+                justify-content:space-around;
     li{
       padding:5px;
       border-radius: 5px;
-      display: inline-block;
-      margin-left:5%;
       text-overflow: ellipsis;
+      list-style: none;
       &:hover{
-        background:$green;
+        background:$purple;
         color:white;
         a{
           color:white;
           text-decoration: none;
+          span{
+            line-height: 1.2;
+          }
         }
       }
     }
     @media screen and (max-width:768px){
-      display: block;
       li{
-        display: inline-block;
         width:23%;
         padding:0.25%;
-        margin:5px 0.25%;
         text-align: center;
-        border:1px solid $green;
+        border:1px solid $purple;
       }
     }
   } 
