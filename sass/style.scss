@@ -13,6 +13,7 @@ $hotpink:#d219e1;
 $ceo-darkblue:#21283f;
 $roadmap-ball:#5cc4ff;
 $ball-shadow: 2px 2px 7px 2px hsla(264, 100%, 50%, .4);
+$overlay-bg:#372f5c;
 // coin new color end
 $grid-gutter-width: 40px !default;
 $border-radius-base : 4px !default;
@@ -393,7 +394,7 @@ h6 {
         >.overlay-darker {
             z-index: 8;
             opacity: .5;
-            background: #474747;
+            background: $overlay-bg;
             position: absolute;
             left: 0;
             right: 0;

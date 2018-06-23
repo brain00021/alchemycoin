@@ -1,5 +1,6 @@
 	.transparent_bg {
 	    background: transparent url('../images/video_bg.png') 100% no-repeat;
+	background-size: cover;
 	}
 
 	.base_block {
@@ -177,6 +178,7 @@
 	    #e8eef6,
 	    #d9e3f1)
 			padding: 10px;
+			font-weight: bold;
 	     &.reverseBtn {
 	        @include button(transparent,
 	        rgba(255, 255, 255, .3),
@@ -184,6 +186,6 @@
 	        rgba(255, 255, 255, .3),
 	        #d9e3f1) 
 	        margin-top: 20px;
-	        			padding: 10px;
+	        padding: 10px;
 	    }
 	}

@@ -334,7 +334,7 @@ h6 {
     #alchemy-invest .alchemy-block > .overlay-darker {
       z-index: 8;
       opacity: .5;
-      background: #474747;
+      background: #372f5c;
       position: absolute;
       left: 0;
       right: 0;
@@ -1349,7 +1349,8 @@ ul {
       text-align: center; } }
 
 .transparent_bg {
-  background: transparent url("../images/video_bg.png") 100% no-repeat; }
+  background: transparent url("../images/video_bg.png") 100% no-repeat;
+  background-size: cover; }
 
 .base_block {
   position: relative;
@@ -1485,7 +1486,8 @@ button.coinBtn {
   font-weight: 500;
   width: 100%;
   margin-bottom: 20px;
-  padding: 10px; }
+  padding: 10px;
+  font-weight: bold; }
   button.coinBtn:hover {
     background-color: #e8eef6;
     border-color: #d9e3f1; }
@@ -1648,7 +1650,7 @@ canvas {
       left: 28px;
       margin: 0; }
     .map-card:last-child {
-      min-height: 100px; } }
+      margin-top: 30px; } }
 
 .manager-block,
 .advisor-block {
@@ -1658,16 +1660,16 @@ canvas {
   overflow: hidden;
   border-radius: 15px;
   border: 1px solid rgba(169, 29, 217, 0.8); }
-  .manager-block:hover, .manager-block:active, .manager-block:focus,
-  .advisor-block:hover,
-  .advisor-block:active,
-  .advisor-block:focus {
+  .manager-block:focus, .manager-block:hover,
+  .advisor-block:focus,
+  .advisor-block:hover {
+    text-decoration: none; }
+  .manager-block:hover,
+  .advisor-block:hover {
     outline: none;
     text-decoration: none; }
-    .manager-block:hover img, .manager-block:active img, .manager-block:focus img,
-    .advisor-block:hover img,
-    .advisor-block:active img,
-    .advisor-block:focus img {
+    .manager-block:hover img,
+    .advisor-block:hover img {
       opacity: .5;
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -1677,15 +1679,9 @@ canvas {
       -o-transition: scale 1s linear;
       transition: scale 1s linear; }
     .manager-block:hover .manager-img:before,
-    .manager-block:hover .advisor-img:before, .manager-block:active .manager-img:before,
-    .manager-block:active .advisor-img:before, .manager-block:focus .manager-img:before,
-    .manager-block:focus .advisor-img:before,
+    .manager-block:hover .advisor-img:before,
     .advisor-block:hover .manager-img:before,
-    .advisor-block:hover .advisor-img:before,
-    .advisor-block:active .manager-img:before,
-    .advisor-block:active .advisor-img:before,
-    .advisor-block:focus .manager-img:before,
-    .advisor-block:focus .advisor-img:before {
+    .advisor-block:hover .advisor-img:before {
       font-family: 'icomoon';
       content: "\e036";
       position: absolute;
@@ -1703,41 +1699,23 @@ canvas {
       text-align: center;
       z-index: 2; }
     .manager-block:hover .manager-img:after,
-    .manager-block:hover .advisor-img:after, .manager-block:active .manager-img:after,
-    .manager-block:active .advisor-img:after, .manager-block:focus .manager-img:after,
-    .manager-block:focus .advisor-img:after,
+    .manager-block:hover .advisor-img:after,
     .advisor-block:hover .manager-img:after,
-    .advisor-block:hover .advisor-img:after,
-    .advisor-block:active .manager-img:after,
-    .advisor-block:active .advisor-img:after,
-    .advisor-block:focus .manager-img:after,
-    .advisor-block:focus .advisor-img:after {
+    .advisor-block:hover .advisor-img:after {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1);
       opacity: 1; }
     .manager-block:hover .manager-text,
-    .manager-block:hover .advisor-text, .manager-block:active .manager-text,
-    .manager-block:active .advisor-text, .manager-block:focus .manager-text,
-    .manager-block:focus .advisor-text,
+    .manager-block:hover .advisor-text,
     .advisor-block:hover .manager-text,
-    .advisor-block:hover .advisor-text,
-    .advisor-block:active .manager-text,
-    .advisor-block:active .advisor-text,
-    .advisor-block:focus .manager-text,
-    .advisor-block:focus .advisor-text {
+    .advisor-block:hover .advisor-text {
       left: 0;
       z-index: -1; }
     .manager-block:hover .manager-text,
-    .manager-block:hover .advisor-text, .manager-block:active .manager-text,
-    .manager-block:active .advisor-text, .manager-block:focus .manager-text,
-    .manager-block:focus .advisor-text,
+    .manager-block:hover .advisor-text,
     .advisor-block:hover .manager-text,
-    .advisor-block:hover .advisor-text,
-    .advisor-block:active .manager-text,
-    .advisor-block:active .advisor-text,
-    .advisor-block:focus .manager-text,
-    .advisor-block:focus .advisor-text {
+    .advisor-block:hover .advisor-text {
       -webkit-transform: scale(1.01);
       -ms-transform: scale(1.01);
       transform: scale(1.01); }

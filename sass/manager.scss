@@ -6,9 +6,10 @@
     overflow: hidden;
     border-radius: 15px;
     border: 1px solid rgba($logo-light, .8);
-    &:hover,
-    &:active,
-    &:focus {
+    &:focus,&:hover{
+       text-decoration: none;
+    }
+    &:hover {
         outline: none;
         text-decoration: none;
         img {
@@ -42,6 +43,7 @@
         .advisor-text {
             left: 0;
             z-index: -1;
+
         }
 
         .manager-text,
