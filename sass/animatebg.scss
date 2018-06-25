@@ -1,12 +1,21 @@
 body {
-    background-color: #1b1f47;
-    background: #1b1f47 url("../images/bg2.jpg") no-repeat bottom center;
+    // background-color: #1b1f47;
+    // background: #1b1f47 url("../images/bg2.jpg") no-repeat bottom center;
+    background: #1c2043;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(29deg, #3f2b96 10%, #1c2043 60%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(29deg, #3f2b96 10%, #1c2043 60%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 
 .animatebg {
     position: absolute;
     overflow: hidden;
-    max-height: 1500px;
+    max-height: 1000px;
     top: 0;
     left: 0;
     right: 0;
@@ -21,6 +30,7 @@ canvas {
 }
 
 
+
 /* ---- particles.js container ---- */
 
 #particles-js {
@@ -29,6 +39,9 @@ canvas {
     height: 100%;
     pointer-events: auto;
     top: 0;
-    background: #1b1f47 url("../images/bg.jpg") no-repeat top center;
-
+    background-color: #1c2043;
+    background: -webkit-linear-gradient(to top, transparent 3%, #1c2043 30%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, transparent 3%, #1c2043 30%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
