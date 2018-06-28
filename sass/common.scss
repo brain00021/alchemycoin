@@ -129,10 +129,20 @@ h4.heading {
 .index-wrapper {
     overflow: hidden;
     padding-top: 100px;
-    position: relative;
     z-index: 12;
     max-width: 1300px;
     margin: auto;
+    &:after{
+      content: '';
+      display: block;
+      width: 100%;
+      position: absolute;
+      height:800px;
+      left:0;
+      bottom:0;
+      background:url(../images/bg2.jpg) no-repeat bottom center;
+      opacity: 0.5;
+    }
 }
 
 // title
