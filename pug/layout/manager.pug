@@ -2,7 +2,7 @@ block manager
 	section.card-bg-dark.js-manage(data-section="managers")
 		h3.heading Managers
 		.row
-			- for (var i = 1; i < 9; i++)
+			- for (var i = 4; i < 11; i++)
 				.col-md-3.col-xs-6.col-xxs-12
 					a.manager-block.to-animate(href=".manager-dialog"+i)
 						.manager-img
@@ -10,7 +10,7 @@ block manager
 						.manager-text 
 							h4 CEO NAME
 							p Chief Financial Officer
-			- for (var i = 1; i < 9; i++)				
+			- for (var i = 4; i < 11; i++)				
 				.mfp-hide(class="manager-dialog"+i)
 					image.img-responsive(src="/images/ceo/ceo"+i+".jpg")
 					.manager-text 
