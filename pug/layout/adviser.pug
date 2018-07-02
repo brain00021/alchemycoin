@@ -1,0 +1,18 @@
+block adviser
+	section.card-bg-dark.js-manage(data-section="advisors")
+		h3.heading Advisiors
+		.row
+			- for (var i = 1; i < 9; i++)
+				.col-md-3.col-xs-6.col-xxs-12
+					a.advisor-block.to-animate(href=".advisor-dialog"+i)
+						.advisor-img
+							img(src="/images/ceo/ceo"+i+".jpg")
+						.advisor-text 
+							h4 Advisor NAME
+							p Chief Financial Officer
+			- for (var i = 1; i < 9; i++)				
+				.mfp-hide(class="advisor-dialog"+i)
+					image.img-responsive(src="/images/ceo/ceo"+i+".jpg")
+					.advisor-text 
+						h4 Advisor NAME
+						p Chief Financial Officer
